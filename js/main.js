@@ -64,22 +64,6 @@ const expiresCookie = 30;
         });
 
         /*----------------------------------------------------*/
-        /*	SwipeMin Slider
-         /*----------------------------------------------------*/
-        window.mySwipe = new SwipeMin(document.getElementById('slider'), {
-            startSlide: 2,
-            speed: 400,
-            auto: 3000,
-            continuous: true,
-            disableScroll: false,
-            stopPropagation: false,
-            callback: function (index, elem) {
-            },
-            transitionEnd: function (index, elem) {
-            }
-        });
-
-        /*----------------------------------------------------*/
         /*	Accordians
          /*----------------------------------------------------*/
 
@@ -127,80 +111,61 @@ const expiresCookie = 30;
                     $('.btntoTop').removeClass('active');
             });
 
+        $("#contactForm").validate({
+            submitHandler: function (form) {
+                let utmCode = getCookieUtm('utm_code');
+                if (utmCode === undefined) {
+                    utmCode = '';
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: "php/contact.php",
+                    data: {
+                        "name": $("#contactForm #name").val(),
+                        "email": $("#contactForm #email").val(),
+                        "subject": $("#contactForm #subject").val(),
+                        "message": $("#contactForm #message").val(),
+                        "advertisingSource": utmCode
+                    },
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data);
+                    }
+                });
+            },
+            rules: {
+                name: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                subject: {
+                    required: true
+                },
+                message: {
+                    required: true
+                }
+            },
+            highlight: function (element) {
+                $(element)
+                    .closest(".control-group")
+                    .removeClass("success")
+                    .addClass("error");
+            },
+            success: function (element) {
+                $(element)
+                    .closest(".control-group")
+                    .removeClass("error")
+                    .addClass("success");
+            }
+        });
+
         /* ------------------ End Document ------------------ */
     });
 })(this.jQuery);
-
-/**
- * jQuery Plugin to obtain touch gestures from iPhone, iPod Touch, iPad, and Android mobile phones
- * Common usage: wipe images (left and right to show the previous or next image)
- *
- * @author Andreas Waltl, netCU Internetagentur (http://www.netcu.de)
- */
-(function ($) {
-    $.fn.touchwipe = function (settings) {
-        var config = {
-            min_move_x: 20, min_move_y: 20, wipeLeft: function () {
-            }, wipeRight: function () {
-            }, wipeUp: function () {
-            }, wipeDown: function () {
-            }, preventDefaultEvents: true
-        };
-        if (settings) $.extend(config, settings);
-        this.each(function () {
-            var startX;
-            var startY;
-            var isMoving = false;
-
-            function cancelTouch() {
-                this.removeEventListener('touchmove', onTouchMove);
-                startX = null;
-                isMoving = false
-            }
-
-            function onTouchMove(e) {
-                if (config.preventDefaultEvents) {
-                    e.preventDefault()
-                }
-                if (isMoving) {
-                    var x = e.touches[0].pageX;
-                    var y = e.touches[0].pageY;
-                    var dx = startX - x;
-                    var dy = startY - y;
-                    if (Math.abs(dx) >= config.min_move_x) {
-                        cancelTouch();
-                        if (dx > 0) {
-                            config.wipeLeft()
-                        } else {
-                            config.wipeRight()
-                        }
-                    } else if (Math.abs(dy) >= config.min_move_y) {
-                        cancelTouch();
-                        if (dy > 0) {
-                            config.wipeDown()
-                        } else {
-                            config.wipeUp()
-                        }
-                    }
-                }
-            }
-
-            function onTouchStart(e) {
-                if (e.touches.length == 1) {
-                    startX = e.touches[0].pageX;
-                    startY = e.touches[0].pageY;
-                    isMoving = true;
-                    this.addEventListener('touchmove', onTouchMove, false)
-                }
-            }
-
-            if ('ontouchstart' in document.documentElement) {
-                this.addEventListener('touchstart', onTouchStart, false)
-            }
-        });
-        return this
-    }
-})(jQuery);
 
 function setCookieUtm() {
     const domain = window.location.hostname;
