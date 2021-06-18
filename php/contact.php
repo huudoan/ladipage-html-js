@@ -5,13 +5,13 @@ $dataPost = [];
 file_put_contents('./logOrder.txt', print_r($_POST, true) . PHP_EOL, FILE_APPEND);
 if (!empty($_POST['phone'])) {
     $dataPost['phone'] = $_POST['phone'];
-    $dataPost['fullName'] = isset($_POST['fullName']) ? $_POST['fullName'] : '';
-    $dataPost['email'] = isset($_POST['email']) ? $_POST['email'] : '';
-    $dataPost['provinceCode'] = isset($_POST['provinceCode']) ? $_POST['provinceCode'] : '';
-    $dataPost['districtCode'] = isset($_POST['districtCode']) ? $_POST['districtCode'] : '';
-    $dataPost['subDistrictCode'] = isset($_POST['subDistrictCode']) ? $_POST['subDistrictCode'] : '';
-    $dataPost['address'] = isset($_POST['address']) ? $_POST['address'] : '';
-    $dataPost['quantity'] = isset($_POST['quantity']) ? $_POST['quantity'] : '';
+    $dataPost['fullName'] = isset($_POST['fullName']) ? filter_var($_POST['fullName'], FILTER_SANITIZE_STRING) : '';
+    $dataPost['email'] = isset($_POST['email']) ? filter_var($_POST['email'], FILTER_SANITIZE_STRING) : '';
+    $dataPost['provinceCode'] = isset($_POST['provinceCode']) ? filter_var($_POST['provinceCode'], FILTER_SANITIZE_STRING) : '';
+    $dataPost['districtCode'] = isset($_POST['districtCode']) ? filter_var($_POST['districtCode'], FILTER_SANITIZE_STRING) : '';
+    $dataPost['subDistrictCode'] = isset($_POST['subDistrictCode']) ? filter_var($_POST['subDistrictCode'], FILTER_SANITIZE_STRING) : '';
+    $dataPost['address'] = isset($_POST['address']) ? filter_var($_POST['address'], FILTER_SANITIZE_STRING) : '';
+    $dataPost['quantity'] = isset($_POST['quantity']) ? filter_var($_POST['quantity'], FILTER_SANITIZE_STRING) : '';
     $dataPost['productId'] = $productId;
     $dataPost['source'] = $source;
     $dataPost['promotionCode'] = $promotionCode;
@@ -49,7 +49,7 @@ function callAPI($url, $data, $method = 'POST')
     }
     // OPTIONS:
     curl_setopt($curl, CURLOPT_URL, $url);
-    curl_setopt($curl, CURLOPT_HTTPHEADER, array('APIKEY: 111111111111111111111', 'Content-Type: application/json'));
+    curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
     // EXECUTE:
