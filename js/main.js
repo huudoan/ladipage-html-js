@@ -1,7 +1,9 @@
 const expiresCookie = 30;
+const prefixKey = '-511';
 (function ($) {
     $(document).ready(function () {
         setCookieUtm();
+        // getCookieUtm('utm_source');
         (function () {
             var abc = $('.vertical-tab  .nav-tabs').width();
             $('.vertical-tab  .tab-content').css("margin-left", abc - 1);
@@ -179,35 +181,35 @@ function setCookieUtm() {
     const utm_code = urlParams.get('utm_code');
 
     if (utm_source != null && utm_source != '') {
-        $.cookie(domain + '-utm_source', utm_source,  { expires: expiresCookie });
+        $.cookie(domain + prefixKey + '-utm_source', utm_source,  { expires: expiresCookie });
     }
 
     if (utm_medium != null && utm_medium != '') {
-        $.cookie(domain + '-utm_medium', utm_medium,  { expires: expiresCookie });
+        $.cookie(domain + prefixKey + '-utm_medium', utm_medium,  { expires: expiresCookie });
     }
 
     if (utm_campaign != null && utm_campaign != '') {
-        $.cookie(domain + '-utm_campaign', utm_campaign,  { expires: expiresCookie });
+        $.cookie(domain + prefixKey + '-utm_campaign', utm_campaign,  { expires: expiresCookie });
     }
 
     if (utm_adgroup != null && utm_adgroup != '') {
-        $.cookie(domain + '-utm_adgroup', utm_adgroup,  { expires: expiresCookie });
+        $.cookie(domain + prefixKey + '-utm_adgroup', utm_adgroup,  { expires: expiresCookie });
     }
 
     if (utm_source != null && utm_source != '') {
-        $.cookie(domain + '_utm_source', utm_source,  { expires: expiresCookie });
+        $.cookie(domain + prefixKey + '_utm_source', utm_source,  { expires: expiresCookie });
     }
 
     if (utm_adset != null && utm_adset != '') {
-        $.cookie(domain + '-utm_adset', utm_adset,  { expires: expiresCookie });
+        $.cookie(domain + prefixKey + '-utm_adset', utm_adset,  { expires: expiresCookie });
     }
 
     if (utm_code != null && utm_code != '') {
-        $.cookie(domain + '-utm_code', utm_code,  { expires: expiresCookie });
+        $.cookie(domain + prefixKey + '-utm_code', utm_code,  { expires: expiresCookie });
     }
 }
 
 function getCookieUtm(key) {
     const domain = window.location.hostname;
-    return $.cookie(domain + '-' + key);
+    return $.cookie(domain + prefixKey + '-' + key);
 }
