@@ -15,6 +15,7 @@ if (!empty($_POST['phone'])) {
     $dataPost['productId'] = $productId;
     $dataPost['source'] = $source;
     $dataPost['promotionCode'] = $promotionCode;
+    $dataPost['tags'] = isset($_POST['tags']) ? filter_var($_POST['tags'], FILTER_SANITIZE_STRING) : [];
     $result = createOpportunity($api, $dataPost);
     header('Content-type: application/json');
     if ($result) {
@@ -74,6 +75,7 @@ function createOpportunity($url, $dataPost, $method = 'POST')
         'subDistrictCode' => $dataPost['fullName'],
         'address' => $dataPost['fullName'],
         'promotionCode' => $dataPost['fullName'],
+        'tags' => $dataPost['tags'],
         'items' => [
             ['productId' => $dataPost['productId'], 'quantity' => $dataPost['quantity']]
         ],
