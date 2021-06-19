@@ -124,10 +124,10 @@ const prefixKey = '-511';
                     type: "POST",
                     url: "php/contact.php",
                     data: {
-                        "name": $("#contactForm #name").val(),
+                        "fullName": $("#contactForm #fullName").val(),
                         "email": $("#contactForm #email").val(),
-                        "subject": $("#contactForm #subject").val(),
-                        "message": $("#contactForm #message").val(),
+                        "phone": $("#contactForm #phone").val(),
+                        "address": $("#contactForm #address").val(),
                         "advertisingSource": utmCode
                     },
                     dataType: "json",
@@ -137,18 +137,18 @@ const prefixKey = '-511';
                 });
             },
             rules: {
-                name: {
+                fullName: {
                     required: true
                 },
                 email: {
                     required: true,
                     email: true
                 },
-                subject: {
-                    required: true
+                phone: {
+                    phone: true
                 },
-                message: {
-                    required: true
+                address: {
+                    address: true
                 }
             },
             highlight: function (element) {
