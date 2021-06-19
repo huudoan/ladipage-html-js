@@ -145,10 +145,10 @@ const prefixKey = '-511';
                     email: true
                 },
                 phone: {
-                    phone: true
+                    required: true
                 },
                 address: {
-                    address: true
+                    required: true
                 }
             },
             highlight: function (element) {
