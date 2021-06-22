@@ -1,37 +1,37 @@
 const expiresCookie = 30;
 const prefixKey = '-511';
-(function ($) {
+define([
+        "jquery",
+        "fractionslider",
+        "scrolltofixed",
+        "bootstrap",
+        "smartmenus",
+        "bssmartmenus",
+        "jquery-validate",
+        "jquery-cookie"
+    ], function($) {
     $(document).ready(function () {
-        setCookieUtm();
-        // getCookieUtm('utm_source');
+        console.log(getCookieUtm('utm_source'));
         (function () {
             var abc = $('.vertical-tab  .nav-tabs').width();
             $('.vertical-tab  .tab-content').css("margin-left", abc - 1);
         })();
 
-        /*----------------------------------------------------*/
-        /*	Same Height Div's
-         /*----------------------------------------------------*/
         if (jQuery.isFunction(jQuery.fn.matchHeight)) {
             $('.same-height').matchHeight();
         }
 
-        /*----------------------------------------------------*/
-        /*	Fraction Slider
-        /*----------------------------------------------------*/
         if (jQuery.isFunction(jQuery.fn.fractionSlider)) {
-            $(window).load(function () {
-                $('.slider').fractionSlider({
-                    'fullWidth': true,
-                    'controls': true,
-                    'responsive': true,
-                    'dimensions': "1170,355",
-                    'timeout': 5000,
-                    'increase': true,
-                    'pauseOnHover': true,
-                    'slideEndAnimation': false,
-                    'autoChange': true
-                });
+            $('.slider').fractionSlider({
+                'fullWidth': true,
+                'controls': true,
+                'responsive': true,
+                'dimensions': "1170,355",
+                'timeout': 5000,
+                'increase': true,
+                'pauseOnHover': true,
+                'slideEndAnimation': false,
+                'autoChange': true
             });
         }
 
@@ -46,14 +46,11 @@ const prefixKey = '-511';
             return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
         };
 
-
-        //  =======================
-        //  = Progress bars =
-        //  =======================
         $('.progress_skill .bar').data('width', $(this).width()).css({
             width: 0,
             height: 0
         });
+
         $(window).scroll(function () {
             $('.progress_skill .bar').each(function () {
                 if (goScrolling($(this))) {
@@ -68,7 +65,6 @@ const prefixKey = '-511';
         /*----------------------------------------------------*/
         /*	Accordians
          /*----------------------------------------------------*/
-
         $('.accordion').on('shown.bs.collapse', function (e) {
             $(e.target).parent().addClass('active_acc');
             $(e.target).prev().find('.switch').removeClass('fa-plus-circle');
@@ -95,24 +91,9 @@ const prefixKey = '-511';
             $(e.target).prev().find('.switch').removeClass('fa-minus-circle');
         });
 
-        /*============
-         BUTTON UP
-         * ===========*/
-        var btnUp = $('<div/>', {'class': 'btntoTop'});
-        btnUp.appendTo('body');
-        $(document).on('click', '.btntoTop', function () {
-                $('html, body').animate({
-                    scrollTop: 0
-                }, 700);
-            });
-
-        $(window).on('scroll', function () {
-                if ($(this).scrollTop() > 200)
-                    $('.btntoTop').addClass('active');
-                else
-                    $('.btntoTop').removeClass('active');
-            });
-
+        //  ============================
+        //  = Validate Form function =
+        //  ===========================
         $("#contactForm").validate({
             submitHandler: function (form) {
                 let utmCode = getCookieUtm('utm_code');
@@ -164,52 +145,50 @@ const prefixKey = '-511';
                     .addClass("success");
             }
         });
-
-        /* ------------------ End Document ------------------ */
     });
-})(this.jQuery);
 
-function setCookieUtm() {
-    const domain = window.location.hostname;
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const utm_source = urlParams.get('utm_source');
-    const utm_medium = urlParams.get('utm_medium');
-    const utm_campaign = urlParams.get('utm_campaign');
-    const utm_adgroup = urlParams.get('utm_adgroup');
-    const utm_adset = urlParams.get('utm_adset');
-    const utm_code = urlParams.get('utm_code');
+    function setCookieUtm() {
+        const domain = window.location.hostname;
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const utm_source = urlParams.get('utm_source');
+        const utm_medium = urlParams.get('utm_medium');
+        const utm_campaign = urlParams.get('utm_campaign');
+        const utm_adgroup = urlParams.get('utm_adgroup');
+        const utm_adset = urlParams.get('utm_adset');
+        const utm_code = urlParams.get('utm_code');
 
-    if (utm_source != null && utm_source != '') {
-        $.cookie(domain + prefixKey + '-utm_source', utm_source,  { expires: expiresCookie });
+        if (utm_source != null && utm_source != '') {
+            $.cookie(domain + prefixKey + '-utm_source', utm_source,  { expires: expiresCookie });
+        }
+
+        if (utm_medium != null && utm_medium != '') {
+            $.cookie(domain + prefixKey + '-utm_medium', utm_medium,  { expires: expiresCookie });
+        }
+
+        if (utm_campaign != null && utm_campaign != '') {
+            $.cookie(domain + prefixKey + '-utm_campaign', utm_campaign,  { expires: expiresCookie });
+        }
+
+        if (utm_adgroup != null && utm_adgroup != '') {
+            $.cookie(domain + prefixKey + '-utm_adgroup', utm_adgroup,  { expires: expiresCookie });
+        }
+
+        if (utm_source != null && utm_source != '') {
+            $.cookie(domain + prefixKey + '_utm_source', utm_source,  { expires: expiresCookie });
+        }
+
+        if (utm_adset != null && utm_adset != '') {
+            $.cookie(domain + prefixKey + '-utm_adset', utm_adset,  { expires: expiresCookie });
+        }
+
+        if (utm_code != null && utm_code != '') {
+            $.cookie(domain + prefixKey + '-utm_code', utm_code,  { expires: expiresCookie });
+        }
     }
 
-    if (utm_medium != null && utm_medium != '') {
-        $.cookie(domain + prefixKey + '-utm_medium', utm_medium,  { expires: expiresCookie });
+    function getCookieUtm(key) {
+        const domain = window.location.hostname;
+        return $.cookie(domain + prefixKey + '-' + key);
     }
-
-    if (utm_campaign != null && utm_campaign != '') {
-        $.cookie(domain + prefixKey + '-utm_campaign', utm_campaign,  { expires: expiresCookie });
-    }
-
-    if (utm_adgroup != null && utm_adgroup != '') {
-        $.cookie(domain + prefixKey + '-utm_adgroup', utm_adgroup,  { expires: expiresCookie });
-    }
-
-    if (utm_source != null && utm_source != '') {
-        $.cookie(domain + prefixKey + '_utm_source', utm_source,  { expires: expiresCookie });
-    }
-
-    if (utm_adset != null && utm_adset != '') {
-        $.cookie(domain + prefixKey + '-utm_adset', utm_adset,  { expires: expiresCookie });
-    }
-
-    if (utm_code != null && utm_code != '') {
-        $.cookie(domain + prefixKey + '-utm_code', utm_code,  { expires: expiresCookie });
-    }
-}
-
-function getCookieUtm(key) {
-    const domain = window.location.hostname;
-    return $.cookie(domain + prefixKey + '-' + key);
-}
+});
