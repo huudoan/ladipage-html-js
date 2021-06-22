@@ -36,4 +36,4 @@ requirejs.config({
 });
 
 // Load main
-requirejs(["../main"]);
+requirejs(["../app"]);
