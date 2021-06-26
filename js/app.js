@@ -1,26 +1,7 @@
 const expiresCookie = 30;
 const prefixKey = '-511';
-define([
-        "jquery",
-        "fractionslider",
-        "scrolltofixed",
-        "bootstrap",
-        "smartmenus",
-        "bssmartmenus",
-        "jquery-validate",
-        "jquery-cookie"
-    ], function($) {
+require(["jquery", "fractionslider", "bootstrap", "smartmenus", "bssmartmenus"], function($) {
     $(document).ready(function () {
-        console.log(getCookieUtm('utm_source'));
-        (function () {
-            var abc = $('.vertical-tab  .nav-tabs').width();
-            $('.vertical-tab  .tab-content').css("margin-left", abc - 1);
-        })();
-
-        if (jQuery.isFunction(jQuery.fn.matchHeight)) {
-            $('.same-height').matchHeight();
-        }
-
         if (jQuery.isFunction(jQuery.fn.fractionSlider)) {
             $('.slider').fractionSlider({
                 'fullWidth': true,
@@ -34,66 +15,12 @@ define([
                 'autoChange': true
             });
         }
+    });
+});
 
-        //  ============================
-        //  = Scroll event function =
-        //  ===========================
-        var goScrolling = function (elem) {
-            var docViewTop = $(window).scrollTop();
-            var docViewBottom = docViewTop + $(window).height();
-            var elemTop = elem.offset().top;
-            var elemBottom = elemTop + elem.height();
-            return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-        };
-
-        $('.progress_skill .bar').data('width', $(this).width()).css({
-            width: 0,
-            height: 0
-        });
-
-        $(window).scroll(function () {
-            $('.progress_skill .bar').each(function () {
-                if (goScrolling($(this))) {
-                    $(this).css({
-                        width: $(this).attr('data-value') + '%',
-                        height: $(this).attr('data-height') + '%'
-                    });
-                }
-            });
-        });
-
-        /*----------------------------------------------------*/
-        /*	Accordians
-         /*----------------------------------------------------*/
-        $('.accordion').on('shown.bs.collapse', function (e) {
-            $(e.target).parent().addClass('active_acc');
-            $(e.target).prev().find('.switch').removeClass('fa-plus-circle');
-            $(e.target).prev().find('.switch').addClass('fa-minus-circle');
-        });
-        $('.accordion').on('hidden.bs.collapse', function (e) {
-            $(e.target).parent().removeClass('active_acc');
-            $(e.target).prev().find('.switch').addClass('fa-plus-circle');
-            $(e.target).prev().find('.switch').removeClass('fa-minus-circle');
-        });
-
-
-        /*----------------------------------------------------*/
-        /*	Toggles
-         /*----------------------------------------------------*/
-        $('.toggle').on('shown.bs.collapse', function (e) {
-            $(e.target).parent().addClass('active_acc');
-            $(e.target).prev().find('.switch').removeClass('fa-plus-circle');
-            $(e.target).prev().find('.switch').addClass('fa-minus-circle');
-        });
-        $('.toggle').on('hidden.bs.collapse', function (e) {
-            $(e.target).parent().removeClass('active_acc');
-            $(e.target).prev().find('.switch').addClass('fa-plus-circle');
-            $(e.target).prev().find('.switch').removeClass('fa-minus-circle');
-        });
-
-        //  ============================
-        //  = Validate Form function =
-        //  ===========================
+require(["jquery", "jquery-cookie", "jquery-validate"], function($) {
+    setCookieUtm();
+    $(document).ready(function () {
         $("#contactForm").validate({
             submitHandler: function (form) {
                 let utmCode = getCookieUtm('utm_code');
@@ -191,4 +118,47 @@ define([
         const domain = window.location.hostname;
         return $.cookie(domain + prefixKey + '-' + key);
     }
+});
+
+require(["jquery", "scrolltofixed"], function($) {
+    $(document).ready(function () {
+        var goScrolling = function (elem) {
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+            var elemTop = elem.offset().top;
+            var elemBottom = elemTop + elem.height();
+            return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+        };
+
+        $('.progress_skill .bar').data('width', $(this).width()).css({
+            width: 0,
+            height: 0
+        });
+
+        $(window).scroll(function () {
+            $('.progress_skill .bar').each(function () {
+                if (goScrolling($(this))) {
+                    $(this).css({
+                        width: $(this).attr('data-value') + '%',
+                        height: $(this).attr('data-height') + '%'
+                    });
+                }
+            });
+        });
+
+        var btnUp = $('<div/>', {'class': 'btntoTop'});
+        btnUp.appendTo('body');
+        $(document).on('click', '.btntoTop', function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 700);
+        });
+
+        $(window).on('scroll', function () {
+            if ($(this).scrollTop() > 200)
+                $('.btntoTop').addClass('active');
+            else
+                $('.btntoTop').removeClass('active');
+        });
+    });
 });
