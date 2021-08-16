@@ -1,0 +1,13 @@
+/* @media only screen and (min-width: 375px) and (max-width: 424px) { */
+@media only screen and (min-width: 2500px) {
+
+	#form-footer-desktop{
+		padding: 10px 0 0 27%;
+	}
+
+	.main .container .row-4 .icon-right img{
+		right: 30%;
+	}
+
+}
+   

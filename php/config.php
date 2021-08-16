@@ -6,3 +6,9 @@ $source = 0;
 $tags = [
    ['tagId' => 1, 'tagName' => 'Đau đâu ']
 ];
+$domainName = '';
+$metaDescription = '';
+$metaKeywords = '';
+$metaTitle = '';
+$metaImage = '';
+?>

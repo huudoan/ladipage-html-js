@@ -1,0 +1,771 @@
+/* @media only screen and (min-width: 375px) and (max-width: 424px) { */
+  @media only screen and (min-width: 768px) and (max-width: 768px){
+    .header-banner-main-detail-description .btn-white{
+      left: 40% !important;
+    }
+    .header-banner-main-detail-description .btn-yell{
+      left: 40% !important;
+    }
+
+  }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-mobile .logo {
+      max-width: 60%;
+      margin: 0 auto;
+      padding: 10px;
+    }
+    .header-mobile .logo img {
+      width: 100%;
+    }
+    .header-mobile .container{
+      /* position: fixed;
+      background: #fff;
+      z-index: 10;
+      width: 100%;
+      left: 0;
+      padding: 0;
+      margin: 0;
+      max-width: 100%; */
+      max-width: 100%;
+    }
+    .header-banner {
+      padding-top: 120px;
+      top: 20px;
+      position: relative;
+      top: 126px;
+    }
+    .header-banner-main-detail {
+      height: 500px;
+    }
+    .header-banner-main-detail-description {
+      padding-top: 4%;
+    }
+    .header-banner-main-detail-description .title-larger {
+      padding: 20px 10px;
+      margin-top: -77px;
+      font-size: 30px !important;
+      white-space: normal;
+      padding-left: 43%;
+    }
+    .header-banner-main-detail-description .title-larger span {
+      color: #FFB400;
+      font-size: 105px;
+    }
+    .header-banner-main-detail-description .title-larger span.dropcap {
+      float: left;
+      display: block;
+      font-size: 163px;
+      margin-top: -13px;
+    }
+    .header-banner-main-detail-description .title-larger span.dropcap-larger {
+      font-size: 90px;
+    }
+    .header-banner-main-detail-description .title-small {
+      font-size: 28px !important;
+      padding-left: 10px;
+    }
+    .header-banner-main-detail-description .btn-yell {
+      font-size: 20px;
+      padding: 10px 30px;
+      background: #FFB400;
+      color: #0A1C5F;
+      height: 30px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      position: absolute;
+      white-space: nowrap;
+      left: 20px;
+      margin-top: 20px;
+      left:377px;
+    }
+    .header-banner-main-detail-description .btn-white {
+      font-size: 28px;
+      color: #ffffff;
+      position: absolute;
+      left: 20px;
+      font-family: "Myriad Pro Condensed";
+      padding-top: 60px;
+      left:377px;
+    }
+  
+    #formDeal212 {
+      font-family: SVN-Gilroy Bold;
+      font-weight: bold;
+      background: #FFB400;
+      height: auto;
+      right: 0;
+      width: 100%;
+      padding: 0;
+      border-top: 0;
+      border-radius: 0;
+    }
+    #formDeal212.row{
+      margin: 0px;
+      position: fixed;
+      bottom: 0;
+      z-index: 9999;
+    }
+    #formDeal212 .check {
+      /* background: #0A1C5F;
+      color: #ffffff; */
+      padding: 0px 20px;
+    }
+    #formDeal212 .checkbox input[type=checkbox] {
+      -webkit-appearance: none;
+      width: 48px;
+      height: 48px;
+      vertical-align: middle;
+      background-image: url("../media/img/check_form.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      float: right;
+    }
+    #formDeal212 .checkbox input[type=checkbox]:checked {
+      -webkit-appearance: none;
+      width: 48px;
+      height: 48px;
+      vertical-align: middle;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../media/img/check_form_checked.png");
+      float: right;
+    }
+    #formDeal212 .price {
+      font-size: 24px;
+      bottom: 5px;
+      /* right: 44px; */
+      color: #0A1C5F;
+      text-align: center;
+      line-height: 1.2;
+    }
+    #formDeal212 .dosage {
+      font-size: 14px;
+      padding-left: 12px;
+    }
+    #formDeal212 input {
+      height: 29px;
+      margin-bottom: 5px;
+      border-radius: 0px;
+      width: 92%;
+      margin-left: 22px;
+    }
+    #formDeal212 button{
+      width: 100%;
+      left: 0;
+      bottom: -33px;
+    }
+    #formDeal212 .ic_close {
+      width: 15px !important;
+      right: 0;
+      float: right;
+      top: -9px;
+    }
+    #formDeal212 input::-moz-placeholder {
+      color: #0A1C5F;
+      font-weight: bold;
+      font-size: 15px !important;
+    }
+    #formDeal212 input:-ms-input-placeholder {
+      color: #0A1C5F;
+      font-weight: bold;
+      font-size: 15px !important;
+    }
+    #formDeal212 input::placeholder {
+      color: #0A1C5F;
+      font-weight: bold;
+      font-size: 15px !important;
+    }
+    #formDeal212 .form-group {
+      display: flex;
+      width: 100%;
+      padding: 10px;
+      align-content: center;
+      vertical-align: middle;
+      align-items: center;
+      margin-bottom: 0px;
+    }
+    #formDeal212 .form-group img {
+      width: 100%;
+    }
+    #formDeal212 .form-group label {
+      font-size: 18px !important;
+      padding-left: 60px;
+      color:#FFC600;
+      padding: 10px 58px;
+      background: #0A1C5F;
+    }
+    #formDeal212 .form-group #btnDeal212 {
+      border-radius: 0px;
+      font-size: 13px !important;
+      font-family: SVN-Gilroy Bold;
+      font-weight: bold;
+      padding: 0px !important;
+    }
+    .main-title{
+      margin-top: 127px;
+    }
+    .main-title p {
+      background: #FFB400 !important;
+    }
+  
+    img {
+      width: 100% !important;
+    }
+  
+    .hide-mobile {
+        display: none !important;
+    }
+      
+    .hide-desktop {
+        display: block !important;
+    }
+      
+  
+    input {
+      height: 40px;
+      font-size: 20px !important;
+    }
+  
+    button {
+      height: 40px !important;
+      font-size: 20px !important;
+    }
+  
+    .main {
+      background: #0A1C5F;
+    }
+    .main-title p {
+      font-size: 48px;
+    }
+    /* .main .container {
+      margin: 0 !important;
+      padding: 0 !important;
+    } */
+    .main .container .row-1 .main-content {
+      margin-top: 0;
+      margin-left: 5%;
+    }
+    .main .container .main-content .title p {
+      font-size: 17px;
+      text-align: center;
+      font-weight: bold;
+    }
+  
+    .main .container .main-content .title.btn-yell p {
+      background: #FFB400;
+      color: #0A1C5F;
+      text-transform: initial;
+      font-weight: normal;
+    }
+    .main .container .main-content .title.btn-yell p span{
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .main .container .main-content .row {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .main .container .main-content .row img {
+      max-width: 100%;
+      /*height: 310px;*/
+    }
+    .main .container .main-content .row p {
+      font-family: "Myriad Pro Condensed";
+      font-size: 22px;
+      background: #0A1C5F;
+      color: #ffffff;
+      text-align: center;
+      height: 100px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .main .container .main-content .row p span {
+      margin: 0 auto;
+    }
+    .main .container .row-3 div {
+      background: #fff;
+      font-size: 22px;
+      font-family: "Myriad Pro Condensed";
+      padding: 15px;
+      color: #0A1C5F;
+      text-align: center;
+      font-weight: bold;
+      padding: 10px 20px !important;
+      font-weight: bold;
+    }
+    .main #consultation {
+      background: #0A1C5F;
+    }
+    .main #consultation .title {
+      background: #FFB400;
+      padding: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 30px;
+      font-family: "Myriad Pro Condensed";
+    }
+    .main #row-4 {
+      background: #0A1C5F;
+    }
+    .main .container .row-5 .form-register .register .row .register-phone{
+      margin-right: 0px !important;
+    }
+    .main .container .row-4 .icon-left {
+      position: absolute;
+      /* top: 32px; */
+      margin-top: -93px;
+      width: 50px !important;
+    }
+    .main .container .row-4 .icon-left img {
+      position: relative;
+      margin-top: 0;
+      left: 10px;
+    }
+    .main #row-4 .title {
+      background: #FFB400;
+      padding: 20px 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 30px;
+      font-family: "Myriad Pro Condensed";
+    }
+    .main .row-5 .form-register-title {
+      font-size: 25px !important;
+      color: #0A1C5F !important;
+      background: #FFB400 !important;
+      font-weight: bold;
+    }
+    .main .row-5 .content {
+      width: 100%;
+      padding: 0 !important;
+      height: 650px !important;
+    }
+    .main .row-5 .content p {
+      width: 100% !important;
+      /*height: 40px !important;*/
+    }
+    .main .row-5 .content p label {
+      font-size: 20px !important;
+    }
+    .main .row-5 .content p input {
+      width: 20px !important;
+      height: 20px !important;
+    }
+    .main .row-5 .form-register .register {
+      flex-direction: column !important;
+      height: auto !important;
+      padding: 0px !important;
+    }
+    .main .row-5 .form-register .register .text-note {
+      width: 100% !important;
+      font-family: "Myriad Pro Condensed";
+      font-size: 22px !important;
+      text-align: center !important;
+      padding: 5px;
+      font-weight: bold;
+    }
+    .main .row-5 .form-register .register .register-phone {
+      width: 100% !important;
+    }
+    .main .row-5 .form-register .register .register-btn {
+      width: 100% !important;
+    }
+    .main .row-5 .form-register .register .row {
+      width: 100% !important;
+    }
+    .main .row-5 .form-register .register .row .register-btn {
+      width: 50% !important;
+    }
+    .main .row-6 .container .title-lar {
+      font-size: 48px !important;
+    }
+    .main .row-6 .container .title {
+      font-size: 22px !important;
+      width: 100% !important;
+    }
+    .main .row-6 .container .excerpt {
+      font-size: 22px !important;
+    }
+    .main .row-6 .container .text {
+      font-size: 30px !important;
+      padding: 0px !important;
+      width: 100% !important;
+    }
+    .main #row-7 {
+      font-size: 20px !important;
+      padding-bottom: 20px;
+    }
+    .main #row-7 .container .row {
+      margin: 0;
+    }
+  
+    .main #row-7 .container .title-lar {
+      font-size: 48px !important;
+    }
+    .main #row-7 .container .title {
+      font-size: 18px;
+      width: 100% !important;
+      height: auto;
+    }
+    .main #row-7 .container .excerpt {
+      font-size: 22px !important;
+    }
+    .main #row-7 .container .text {
+      font-size: 30px !important;
+      padding: 0px !important;
+      width: 100% !important;
+    }
+    .main #row-7 .container img {
+      width: 100%;
+    }
+    .main #row-8 .text {
+      font-size: 20px !important;
+      line-height: 1.4;
+      text-align: left;
+      padding-left: 20px;
+    }
+    .main #row-8 .number {
+      font-size: 22px !important;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      left: -15px;
+      line-height: 45px;
+    }
+    .main #row-8 .checkbox {
+      font-size: 22px !important;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      left: -15px;
+      line-height: 45px;
+    }
+    .main #row-8 p {
+      margin-bottom: 0;
+    }
+    .main #row-8 #customer_telephone {
+      width: 100%;
+      margin-top: 5px;
+    }
+    .main #recommended {
+      background-image: url("../media/img/banner-4.png");
+    }
+    .main #recommended .title {
+      font-size: 48px;
+      padding: 20px;
+      text-transform: capitalize;
+    }
+    .main .container .row-9 .title span{
+        text-transform: uppercase;
+    }
+    .main #recommended .main-slider .content-detail {
+      width: 80%;
+      background: #cdcdcd;
+      margin-top: 10px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0;
+      color: #0A1C5F;
+    }
+    .main #recommended .main-slider .owl-nav {
+      display: none;
+    }
+    .main #row-10 {
+      margin-top: 20px;
+    }
+    .main #row-10 .row {
+      margin: 0;
+    }
+    .main #row-10 .row iframe {
+      margin-top: 20px !important;
+      margin-bottom: 20px;
+    }
+    .main #row-10 .row .text-center {
+      font-size: 38px;
+    }
+    .main #row-10 .row .number {
+      font-size: 27px !important;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      line-height: 48px;
+    }
+    .main #row-10 .row .item {
+      margin: 20px;
+      line-height: 30px;
+    }
+    .main #row-10 .row .text {
+      padding-left: 61px;
+      font-size: 20px !important;
+    }
+    .main #row-10 .row .list_items .checkbox {
+      font-size: 22px !important;
+      width: auto !important;
+      height: 40px !important;
+      position: absolute;
+      line-height: 45px;
+    }
+    .main #row-10 .row .list_items .text-note {
+      background: #0A1C5F;
+      color: #FFC600;
+      font-size: 11px;
+      text-align: center;
+      margin-top: 72px;
+      margin-left: 89px;
+
+    }
+    .main .container .row-11 .container .col-xl-4 .box div .btn{
+      width: 100%;
+    }
+    .main .container .row-10 .container .col-xl-6 .right .list_items .form-buy .row .right .price{
+      margin-right: 14px;
+      padding-top: 84px;
+    }
+    .btn.btn_order{
+      width: 80%;
+    }
+    .main .container .row-10 .container .col-xl-6 .right .list_items .form-buy .item .text{
+      margin-left: 11px;
+    }
+    .main .row {
+      margin: 0 !important;
+    }
+    .main .f-73 {
+      font-size: 40px !important;
+    }
+    .main #formDeal212 .form-group {
+      margin-bottom: 0px !important;
+    }
+    .main #anchor_form_order .form-order {
+      padding: 20px !important;
+    }
+    .main #anchor_form_order label {
+      font-size: 20px;
+    }
+    .main .title-f {
+      font-size: 21px !important;
+      height: auto !important;
+      margin-top: 40px;
+    }
+    .main #row-14 {
+      padding: 20px !important;
+    }
+    .main #row-14 .text-left .right {
+      float: left;
+      margin-top: 20px;
+    }
+    .main #row-14 .text-left .right .email-support {
+      padding-left: 0px !important;
+    }
+    .main .box {
+      margin-top: 20px;
+    }
+    .main h2 {
+      font-size: 48px !important;
+    }
+    .main h2.text-center {
+      font-size: 38px !important;
+    }
+    .main .price.mt-4 .span {
+      font-size: 47px !important;
+    }
+    .main #price {
+      font-size: 30px;
+    }
+    .main #price span {
+      font-size: 43px !important;
+    }
+    .main #price span.small {
+      font-size: 13px !important;
+    }
+    .main #amount_order {
+      width: 59px !important;
+      height: 30px;
+    }
+    .main .text {
+      font-size: 20px !important;
+    }
+    .main .text span {
+      font-size: 37px !important;
+    }
+    .main .text span.smll {
+      display: none;
+    }
+    .main .container .row-10 .container .col-xl-6 .right .list_items .form-buy .row .left img{
+      margin-left: 73px;
+      margin-bottom: -104px;
+      background: none;
+      width: 90% !important;
+    }
+    .btn_order{
+        height: 40px;
+        font-size: 20px !important;
+    }
+    #formDeal212  img.Asset_2{
+      width: 70% !important;
+    }
+    .footer .container .row-14 a.footer_logo img{
+      padding: 20px 30px;
+      max-width: 304px;
+    }
+    .footer .container .row-14 a.footer_logo{
+      height: auto !important;
+    }
+    .footer .container .row-14 .title-f{
+      font-size: 23px !important;
+    }
+    .footer .container .row-14 .title-f.cl-lienhe{
+      margin-top: 20px;
+    }
+    .footer .container .row-14 .left{
+      font-size: 18px;
+    }
+    .footer .container .row-14 .left .payment{
+      margin: 30px !important;
+    }
+    .d-mr{
+      padding-bottom: 150px;
+    }
+    .mobile{
+      opacity: 0;
+    }
+    .main .container .rơw-13 .box-footer{
+      margin-top: -96px;
+    }
+    .main .container .rơw-13 .container .row .form-group .text span{
+      font-size: 57px !important;
+    }
+  
+    .cs-khung{
+      width: 226px !important;
+      float: right;
+      margin-right: 20px;
+      height: 25px;
+      border-top: 2px solid #0A1C5F;
+      border-left: 2px solid #0A1C5F;
+      margin-top: -11px !important;
+    }
+    .main .container .rơw-13 .container .row .box img{
+      width: 80% !important;
+      margin-top: -55px !important;
+
+    }
+    .main .container .row-4 .icon-right img{
+      right: 9%;
+      width: 50px !important;
+      margin-top: -50px;
+    }
+    .desktop{
+      display:block;
+    }
+    .main .container .row-11 .container .col-xl-4 .box p.c-blue{
+      
+      height: 110px;
+
+    }
+    .align-center.hide-desktop{
+      padding-top: 11px;
+    }
+    .main .container .rơw-13 .container .row .box img{
+      width: 80% !important;
+      margin-top: -24px;
+    }
+    .cs-khung{
+      width: 127px;
+      float: right;
+      margin-right: 20px;
+      height: 20px;
+      border-top: 2px solid #0A1C5F;
+      border-left: 2px solid #0A1C5F;
+    }
+    .btn_note.cs-footer{
+      border-radius: 25px 25px 0px 0px;
+      margin-bottom: 0px !important;
+      height: 37px;
+      padding-bottom: -21px;
+      padding-top: 5px;
+    }
+    .main .container .row-5 .form-register .register .row .register-phone{
+      margin-right: 0px;
+    }
+    /* .main .container #slider-usser{
+      border-bottom: 1px solid #0A1C5F;
+      border-left: 1px solid #0A1C5F;
+    } */
+    .show-mobile{
+      display: block !important;
+    }
+    .row.form-number{
+      width: 100%;
+    }
+    .row.form-number .col-6{
+      margin-left: -15px;
+    }
+    .main #row-8 #customer_telephone{
+      width: 105%;
+    }
+    
+    .main .container .row-8 .container .right .form-buy div input{
+      width: 105%;
+    }
+    .main .container .row-8 .container .right .form-buy div button{
+      margin-left: 22px;
+      width: 165px;
+    }
+    #btn_now{
+      margin-left: 15px;
+    }
+    #btn_tv{
+      margin-left: 21px;
+    }
+    .main #row-8 #customer_telephone{
+      margin-left: 15px;
+    }
+    .input-group .circle{
+      width: 20px !important;
+      margin-top: 1px !important;
+    }
+    .main .container .row-10 .container .col-xl-6 .right .text-small{
+      padding-left: 20px;
+    }
+    .main .container .row-12 .container .user-content .author{
+      color: #0A1C5F;
+      font-family: Times New Roman, serif;
+      font-size: 27px;
+      position: relative;
+      border-right: 1px solid #2E3191;
+      padding: 0 0 20px 0;
+      border-bottom: 1px solid #2E3191;
+      margin-left: -71px !important;
+      margin-top: -125px;
+      height: 150px;
+      padding-top: 111px !important;
+      padding-left: 70px !important;
+    }
+    #formDeal212 .check{
+      top: -49px;
+      position: absolute;
+      width: 100%;
+      background: none;
+      right: 46%;
+    }
+    .form-footer form .check .checkbox{
+        margin-right: 22px;
+        height: 50px;
+        position: absolute;
+    }
+    #formDeal212 {
+      height: 112px;
+      border-top: 0;
+      border-radius: 25px 25px 0px 0px;
+    }
+    #formDeal212 img.Asset_2{
+      width: 80% !important;
+      margin-top: -65px;
+      margin-left: 16px;
+    }
+   
+  }
+ 
