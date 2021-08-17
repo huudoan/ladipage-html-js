@@ -40,6 +40,7 @@ function createOpportunity($url, $dataPost, $method = 'POST')
         'fullName' => $dataPost['fullName'],
         'email' => $dataPost['fullName'],
         'phone' => $dataPost['fullName'],
+        'advertisingSource' => $dataPost['advertisingSource'],
         'provinceCode' => $dataPost['fullName'],
         'districtCode' => $dataPost['fullName'],
         'subDistrictCode' => $dataPost['fullName'],

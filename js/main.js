@@ -12,6 +12,7 @@ $(document).ready(function () {
             }
         },
         submitHandler: function (form) {
+            $(form).find("#btnOrder21").disable();
             let utmCode = getCookieUtm('utm_code');
             if (utmCode === undefined) {
                 utmCode = '';
@@ -35,7 +36,13 @@ $(document).ready(function () {
                     "tags": tagIds,
                 },
                 success: function (response) {
-                    // TODO
+                    $(form).find("#btnOrder21").enable();
+                    $("#form-order").reset();
+                    if (response.success === true) {
+                        alert('Thành công');
+                    } else {
+                        alert('Thất bại');
+                    }
                 }
             });
             return false;
@@ -53,6 +60,7 @@ $(document).ready(function () {
             }
         },
         submitHandler: function (form) {
+            $(form).find("#btnDeal212").disable();
             let utmCode = getCookieUtm('utm_code');
             if (utmCode === undefined) {
                 utmCode = '';
@@ -76,7 +84,13 @@ $(document).ready(function () {
                     "tags": tagIds,
                 },
                 success: function (response) {
-                    // TODO
+                    $(form).find("#btnDeal212").enable();
+                    $("#formDeal213").reset();
+                    if (response.success === true) {
+                        alert('Thành công');
+                    } else {
+                        alert('Thất bại');
+                    }
                 }
             });
             return false;
