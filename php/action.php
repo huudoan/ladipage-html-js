@@ -4,6 +4,7 @@ include ('function.php');
 
 $dataPost = [];
 if (!empty($_POST['phone'])) {
+    file_put_contents('./logOrder.txt', print_r($_POST, true) . PHP_EOL, FILE_APPEND);
     $dataPost['phone'] = $_POST['phone'];
     $dataPost['fullName'] = isset($_POST['fullName']) ? filter_var($_POST['fullName'], FILTER_SANITIZE_STRING) : '';
     $dataPost['email'] = isset($_POST['email']) ? filter_var($_POST['email'], FILTER_SANITIZE_STRING) : '';
@@ -15,10 +16,18 @@ if (!empty($_POST['phone'])) {
     $dataPost['productId'] = $productId;
     $dataPost['source'] = $source;
     $dataPost['promotionCode'] = $promotionCode;
-    $dataPost['tags'] = isset($_POST['tags']) ? filter_var($_POST['tags'], FILTER_SANITIZE_STRING) : [];
+
+    if (!empty($_POST['tags']))  {
+        foreach ($_POST['tags'] as $v) {
+            $dataPost['tags'][] = ['tagId' => $v];
+        }
+    }
+
     $result = createOpportunity($api, $dataPost);
+    $result = json_decode($result, true);
+    file_put_contents('./logOrder.txt', print_r($result, true) . PHP_EOL, FILE_APPEND);
     header('Content-type: application/json');
-    if ($result) {
+    if (isset($result['statusCode']) && $result['statusCode'] === 200) {
         echo json_encode(array('success' => 'true'));
     } else {
         echo json_encode(array('success' => 'false'));

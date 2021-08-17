@@ -17,6 +17,13 @@ $(document).ready(function () {
                 utmCode = '';
             }
 
+            var tagIds = $(".check_tag:checked").map(function(){
+                return $(this).val();
+            }).get();
+            if (tagIds === undefined) {
+                tagIds = [];
+            }
+
             $.ajax({
                 type: "POST",
                 url: "php/action.php",
@@ -24,17 +31,11 @@ $(document).ready(function () {
                 data: {
                     "fullName": $(form).find("#fullname_order").val(),
                     "phone": $(form).find("#telephone_order").val(),
-                    "advertisingSource": utmCode
+                    "advertisingSource": utmCode,
+                    "tags": tagIds,
                 },
                 success: function (response) {
-                    if (response.success == 'success')
-                    {
-                        alert('success');
-                    }
-                    else
-                    {
-                        alert('fail');
-                    }
+                    // TODO
                 }
             });
             return false;
@@ -57,6 +58,13 @@ $(document).ready(function () {
                 utmCode = '';
             }
 
+            var tagIds = $(".check_tag:checked").map(function(){
+                return $(this).val();
+            }).get();
+            if (tagIds === undefined) {
+                tagIds = [];
+            }
+
             $.ajax({
                 type: "POST",
                 url: "php/action.php",
@@ -64,17 +72,11 @@ $(document).ready(function () {
                 data: {
                     "fullName": $(form).find("#customer_fullname").val(),
                     "phone": $(form).find("#customer_telephone").val(),
-                    "advertisingSource": utmCode
+                    "advertisingSource": utmCode,
+                    "tags": tagIds,
                 },
                 success: function (response) {
-                    if (response.success == 'success')
-                    {
-                        alert('success');
-                    }
-                    else
-                    {
-                        alert('fail');
-                    }
+                    // TODO
                 }
             });
             return false;

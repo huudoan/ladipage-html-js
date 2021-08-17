@@ -202,26 +202,12 @@
                                     KHUYÊN DÙNG CHO <br/><span class="small3">các đối tượng</span>
                                 </p>
                                 <hr class="line-bl">
+                                <?php foreach ($tags1 as $tag) { ?>
                                 <p class="c-blue">
-                                    <input type="checkbox" name="tags[]" id="31" value="1"/>
-                                    <label for="31">Người khí huyết hư, cơ thể suy nhược</label>
+                                    <input class="check_tag" type="checkbox" name="tags[]" id="tag_<?= $tag['tagId'] ?>" value="<?= $tag['tagId'] ?>"/>
+                                    <label for="tag_<?= $tag['tagId'] ?>"><?= $tag['tagName'] ?></label>
                                 </p>
-                                <p class="c-blue">
-                                    <input type="checkbox" name="tags[]" id="32" value="1"/>
-                                    <label for="32">Người sức yếu, hay vã mồ hôi, xanh xao</label>
-                                </p>
-                                <p class="c-blue">
-                                    <input type="checkbox" name="tags[]" id="33" value="1"/>
-                                    <label for="33">Người kém ăn, kém ngủ</label>
-                                </p>
-                                <p class="c-blue">
-                                    <input type="checkbox" name="tags[]" id="34" value="1"/>
-                                    <label for="34">Người chóng mặt, mệt mỏi do suy giảm sức đề kháng</label>
-                                </p>
-                                <p class="c-blue">
-                                    <input type="checkbox" name="tags[]" id="35" value="1"/>
-                                    <label for="35">Người mới hồi phục sau phẫu thuật, phụ nữ sau sinh</label>
-                                </p>
+                                <?php } ?>
                                 <div class="order11">
                                     <button type="button" class="btn btn_order align-center" name="btnBuyNow"
                                             onclick="location.href='#anchor_form_order'">
@@ -304,36 +290,12 @@
                         </div-->
 
                         <div class="col-xl-6 col-lg-6 col-12 content">
-                            <p>
-                                <input type="checkbox" name="tags[]" id="1" value="1"/>
-                                <label for="1">Suy nhược cơ thể là hội chứng toàn thân</label>
-                            </p>
-                            <p>
-                                <input type="checkbox" name="tags[]" id="2" value="2"/>
-                                <label for="2">Triệu chứng</label>
-                            </p>
-                            <p>
-                                <input type="checkbox" name="tags[]" id="3" value="3"/>
-                                <label for="3">Hậu quả</label>
-                            </p>
-                            <p>
-                                <input type="checkbox" name="tags[]" id="4" value="4"/>
-                                <label for="4">Nguyên nhân</label>
-                            </p>
-                            <p>
-                                <input type="checkbox" name="tags[]" id="5" value="5"/>
-                                <label for="5">Suy nhược mạn tính là bệnh cơ địa</label>
-                            </p>
-                            <p>
-                                <input type="checkbox" name="tags[]" id="6" value="6"/>
-                                <label for="6">Điều trị suy nhược cơ thể bằng thuốc Tây y và Đông y truyền thống</label>
-
-                            </p>
-                            <p>
-                                <input type="checkbox" name="tags[]" id="7" value="7"/>
-                                <label for="7">Không phải cứ thuốc Đông y là chữa được suy nhược cơ thể</label>
-
-                            </p>
+                            <?php foreach ($tags2 as $tag) { ?>
+                                <p>
+                                    <input class="check_tag" type="checkbox" name="tags[]" id="tag_<?= $tag['tagId'] ?>" value="<?= $tag['tagId'] ?>"/>
+                                    <label for="tag_<?= $tag['tagId'] ?>"><?= $tag['tagName'] ?></label>
+                                </p>
+                            <?php } ?>
                         </div>
                     </form>
 
@@ -363,35 +325,12 @@
                     <form id="form-register" class="form-register" action="#" autocomplete="off">
 
                         <div class="col-xl-6 col-lg-6 col-12 content right">
-                            <p>
-                                <input type="checkbox" name="tags[]" id="11" value="1"/>
-                                <label for="11">Dược phẩm Nhất Nhất tiếp cận được Ngự y mật phương cung đình</label>
-                            </p>
-                            <p>
-                                <input type="checkbox" name="tags[]" id="12" value="2"/>
-                                <label for="12">Nhà máy dược phẩm chuẩn GMP-WHO</label>
-
-                            </p>
-                            <p>
-                                <input type="checkbox" name="tags[]" id="13" value="1"/>
-
-                                <label for="13">Sản phẩm Đông y thế hệ 2 của Nhất Nhất hiệu quả thực sự</label>
-                            </p>
-                            <p>
-                                <input type="checkbox" name="tags[]" id="14" value="3"/>
-                                <label for="14">Thậm chí vượt trội Tân dược trong nhiều trường hợp</label>
-                            </p>
-                            <p>
-                                <input type="checkbox" name="tags[]" id="15" value="4"/>
-                                <label for="15">Nhất Nhất được Thủ tướng chính phủ trao tặng Giải vàng chất lượng Quốc
-                                    gia</label>
-
-                            </p>
-                            <p>
-                                <input type="checkbox" name="tags[]" id="16" value="4"/>
-                                <label for="16">Sản phẩm giảm Suy nhược Đông y thế hệ 2 cũng không phải ngoại lệ</label>
-                            </p>
-
+                            <?php foreach ($tags3 as $tag) { ?>
+                                <p>
+                                    <input class="check_tag" type="checkbox" name="tags[]" id="tag_<?= $tag['tagId'] ?>" value="<?= $tag['tagId'] ?>"/>
+                                    <label for="tag_<?= $tag['tagId'] ?>"><?= $tag['tagName'] ?></label>
+                                </p>
+                            <?php } ?>
                         </div>
                     </form>
                 </div>
