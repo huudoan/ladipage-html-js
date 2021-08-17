@@ -37,11 +37,16 @@ include('php/function.php');
     <link rel="stylesheet" type="text/css" href="./public/css/reponsive_320.css">
     <link rel="stylesheet" type="text/css" href="./public/css/reponsive_375.css">
     <link rel="stylesheet" type="text/css" href="./public/css/reponsive_425.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/reponsive_540.css">
     <link rel="stylesheet" type="text/css" href="./public/css/reponsive_768.css">
     <link rel="stylesheet" type="text/css" href="./public/css/reponsive_1024.css">
     <link rel="stylesheet" type="text/css" href="./public/css/reponsive_1200.css">
     <link rel="stylesheet" type="text/css" href="./public/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./public/css/OwlCarousel/owl.carousel.min.css">
+    <script>
+        const expiresCookie = <?php echo $expiresCookie; ?>;
+        const prefixKey = '<?php echo $prefixKey; ?>';
+    </script>
 </head>
 <body class="homev2">
 
@@ -49,18 +54,20 @@ include('php/function.php');
 <?php include('templates/main.php'); ?>
 <?php include('templates/footer.php'); ?>
 
-<script src="./public/js/jquery.min.js"></script>
-<script src="./public/js/jquery.cookie.min.js"></script>
-<script src="./public/js/jquery.validate.min.js"></script>
-<script src="./public/js/main.js"></script>
-<script src="./public/js/lazyload.min.js"></script>
-<script src="./public/js/bootstrap/bootstrap.min.js"></script>
-<script src="./public/js/OwlCarousel/jquery.min.js"></script>
-<script src="./public/js/OwlCarousel/owl.carousel.min.js"></script>
-<script src="./public/js/bootstrap/bootstrap.min.js"></script>
-<script src="./public/js/OwlCarousel/jquery.min.js"></script>
-<script src="./public/js/OwlCarousel/owl.carousel.min.js"></script>
-<script src="./public/js/app.js"></script>
+<script type="text/javascript" src="./public/js/jquery.min.js"></script>
+<script type="text/javascript" src="./public/js/lazyload.min.js"></script>
+<script type="text/javascript" src="./public/js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="./public/js/OwlCarousel/jquery.min.js"></script>
+<script type="text/javascript" src="./public/js/OwlCarousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="./public/js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="./public/js/OwlCarousel/jquery.min.js"></script>
+<script type="text/javascript" src="./public/js/OwlCarousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="./public/js/app.js"></script>
+<!-- Action request data -->
+<script type="text/javascript" src="js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- Action request data -->
 <script>
     $(document).ready(function () {
         var owl = $('.owl-carousel');

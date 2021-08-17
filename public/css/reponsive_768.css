@@ -28,24 +28,38 @@
       max-width: 100%; */
       max-width: 100%;
     }
+    .header-feature-mobile p{
+      font-size: xx-large;
+
+    }
     .header-banner {
-      padding-top: 120px;
-      top: 20px;
+  background: url("../media/Ipad/Banner_chinh_Ipad_768.png");
+  background-position-y: 0;
+  background-repeat: no-repeat;
+  height: 434px;
+  /*background-size: 100% 100%;*/
+  
+}
+    .header-banner {
+      /*padding-top: 5%;
+      /*top: 20px;
       position: relative;
-      top: 126px;
+      top: 126px;*/
     }
     .header-banner-main-detail {
       height: 500px;
     }
     .header-banner-main-detail-description {
-      padding-top: 4%;
+     /* padding-top: 4%;*/
+     text-align: center;
     }
     .header-banner-main-detail-description .title-larger {
-      padding: 20px 10px;
+      /*padding: 20px 10px;
       margin-top: -77px;
-      font-size: 30px !important;
+      /*font-size: 30px !important;*/
       white-space: normal;
-      padding-left: 43%;
+      text-align: center;
+      font-size: xxx-large;
     }
     .header-banner-main-detail-description .title-larger span {
       color: #FFB400;
@@ -54,8 +68,8 @@
     .header-banner-main-detail-description .title-larger span.dropcap {
       float: left;
       display: block;
-      font-size: 163px;
-      margin-top: -13px;
+      font-size: 177px;
+      margin-top: -5px;
     }
     .header-banner-main-detail-description .title-larger span.dropcap-larger {
       font-size: 90px;
@@ -89,9 +103,8 @@
     }
   
     #formDeal212 {
-      font-family: SVN-Gilroy Bold;
       font-weight: bold;
-      background: #FFB400;
+      /*background: #FFB400;*/
       height: auto;
       right: 0;
       width: 100%;
@@ -135,19 +148,17 @@
     #formDeal212 .price {
       font-size: 24px;
       bottom: 5px;
-      /* right: 44px; */
+      right: 44px;
       color: #0A1C5F;
       text-align: center;
       line-height: 1.2;
     }
     #formDeal212 .dosage {
       font-size: 14px;
-      padding-left: 12px;
     }
     #formDeal212 input {
       height: 29px;
       margin-bottom: 5px;
-      border-radius: 0px;
       width: 92%;
       margin-left: 22px;
     }
@@ -180,7 +191,7 @@
     #formDeal212 .form-group {
       display: flex;
       width: 100%;
-      padding: 10px;
+      padding: 10px 45px;
       align-content: center;
       vertical-align: middle;
       align-items: center;
@@ -197,23 +208,25 @@
       background: #0A1C5F;
     }
     #formDeal212 .form-group #btnDeal212 {
-      border-radius: 0px;
       font-size: 13px !important;
       font-family: SVN-Gilroy Bold;
       font-weight: bold;
       padding: 0px !important;
     }
     .main-title{
-      margin-top: 127px;
+      /*margin-top: 127px;*/
+      background: url("../media/img/banner_5.png");
     }
     .main-title p {
-      background: #FFB400 !important;
+      font-size: 42px;
+      color: #FCD505;
+      font-family: Roboto Light;
     }
-  
+  /*
     img {
       width: 100% !important;
     }
-  
+  */
     .hide-mobile {
         display: none !important;
     }
@@ -232,10 +245,10 @@
       height: 40px !important;
       font-size: 20px !important;
     }
-  
+  /*
     .main {
       background: #0A1C5F;
-    }
+    }*/
     .main-title p {
       font-size: 48px;
     }
@@ -243,9 +256,8 @@
       margin: 0 !important;
       padding: 0 !important;
     } */
-    .main .container .row-1 .main-content {
+    .main .container .main-content {
       margin-top: 0;
-      margin-left: 5%;
     }
     .main .container .main-content .title p {
       font-size: 17px;
@@ -256,12 +268,7 @@
     .main .container .main-content .title.btn-yell p {
       background: #FFB400;
       color: #0A1C5F;
-      text-transform: initial;
-      font-weight: normal;
-    }
-    .main .container .main-content .title.btn-yell p span{
-      text-transform: uppercase;
-      font-weight: bold;
+      text-transform: capitalize;
     }
     .main .container .main-content .row {
       margin: 0 !important;
@@ -269,7 +276,7 @@
     }
     .main .container .main-content .row img {
       max-width: 100%;
-      /*height: 310px;*/
+      height: 310px;
     }
     .main .container .main-content .row p {
       font-family: "Myriad Pro Condensed";
@@ -299,12 +306,12 @@
       background: #0A1C5F;
     }
     .main #consultation .title {
-      background: #FFB400;
+      /*background: #FFB400;
       padding: 20px;
       margin-left: 10px;
-      margin-right: 10px;
+      margin-right: 10px;font-family: "Myriad Pro Condensed";*/
       font-size: 30px;
-      font-family: "Myriad Pro Condensed";
+      
     }
     .main #row-4 {
       background: #0A1C5F;
@@ -340,11 +347,11 @@
     .main .row-5 .content {
       width: 100%;
       padding: 0 !important;
-      height: 650px !important;
+      height: 560px !important;
     }
     .main .row-5 .content p {
       width: 100% !important;
-      /*height: 40px !important;*/
+      height: 40px !important;
     }
     .main .row-5 .content p label {
       font-size: 20px !important;
@@ -450,15 +457,12 @@
       margin-top: 5px;
     }
     .main #recommended {
-      background-image: url("../media/img/banner-4.png");
+      background-image: url("../media/img/bg_10.png");
+      background-size: 100%;
     }
     .main #recommended .title {
       font-size: 48px;
       padding: 20px;
-      text-transform: capitalize;
-    }
-    .main .container .row-9 .title span{
-        text-transform: uppercase;
     }
     .main #recommended .main-slider .content-detail {
       width: 80%;
@@ -524,14 +528,15 @@
       padding-top: 84px;
     }
     .btn.btn_order{
-      width: 80%;
+      /*width: 80%;*/
     }
     .main .container .row-10 .container .col-xl-6 .right .list_items .form-buy .item .text{
       margin-left: 11px;
     }
+    /*
     .main .row {
       margin: 0 !important;
-    }
+    }*/
     .main .f-73 {
       font-size: 40px !important;
     }
@@ -560,7 +565,7 @@
       padding-left: 0px !important;
     }
     .main .box {
-      margin-top: 20px;
+     /* margin-top: 20px;*/
     }
     .main h2 {
       font-size: 48px !important;
@@ -757,7 +762,7 @@
         position: absolute;
     }
     #formDeal212 {
-      height: 112px;
+      /*height: 112px;*/
       border-top: 0;
       border-radius: 25px 25px 0px 0px;
     }
@@ -766,6 +771,98 @@
       margin-top: -65px;
       margin-left: 16px;
     }
-   
+
+    .main .container .row-9 .content-detail{
+      border-radius: 0px;
+    }
+    .main-slider .owl-nav {
+      visibility: hidden;
+    }
+    .form-footer form{
+      width: 100% !important;
+    }
+    .header-banner-main-detail-description .w-label{
+      
+      padding-right: 0;
+      text-align: center;
+      width: 100%;
+      float: left;
+      font-size: medium;
+      padding: 0;
+      margin-top: 2%;
+    }
+    .header-banner-main-detail-description .w-label .bn-txt{
+      font-size: x-large;
+    }
+   .header-banner-main-detail-description .header-feature{
+    visibility: hidden;
   }
+  .max-content{
+    padding: 10px !important;
+  }
+  .main .container .row-9 .btnMore1{
+    border-radius: 0;
+  }
+  .box32{
+    margin-top: 40px;
+  }
+  .main4{
+      background: url("../media/img/bg_banner_4_mobile.png");
+    }
+  .main5 .bg5{
+    background: url("../media/img/bg_banner_5_mobile.png");
+    float: left;
+  }
+  .main6{
+    float: left;
+  }
+  .header-banner-main-detail-description .header-content{
+  margin-left: 5%;
+  width: 100%;
+      text-align: center;
+      margin-left: 2px;
+      padding: 2%;
+      margin-top: 2%;
+      float: left;
+}
+  .header-banner-main-detail-description .header-content p{
+    
+    text-align: center;
+    line-height: 1;
+    
+    font-size: xx-large;
+    
+  }
+  .main-bg-mb .container{
+    max-width: max-content !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .rơw-13 .row131{
+      margin-top: -15% !important;
+    }
+
+.price-order p.big57{
+      
+      border-bottom: 1px solid #0A1C5F;
+      padding-bottom: 20px;
+      width: 80%;
+      float: right;
+    }
+
+  .row-11 .container .col-xl-4 .box .order11{
+      margin-left: 25%;
+      position: absolute;
+      bottom: 0;
+      width: 50%;
+      margin-bottom: 0;
+  }
+  .row-11 .container .col-xl-4 .box .order11 .btn_order{
+    font-size: x-large !important;
+    padding: 3px;
+  }
+
+
+}
  

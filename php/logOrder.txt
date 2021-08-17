@@ -1,0 +1,58 @@
+Array
+(
+    [fullName] => 123
+    [phone] => 123
+    [advertisingSource] => 
+)
+
+createOpportunity
+http://192.168.100.27:5616/api/FcOpportunity
+Array
+(
+    [phone] => 123
+    [fullName] => 123
+    [email] => 
+    [provinceCode] => 
+    [districtCode] => 
+    [subDistrictCode] => 
+    [address] => 
+    [quantity] => 
+    [productId] => 0
+    [source] => 0
+    [promotionCode] => 
+    [tags] => Array
+        (
+        )
+
+)
+
+http://192.168.100.27:5616/api/FcOpportunity
+Array
+(
+    [customerId] => 0
+    [fullName] => 123
+    [email] => 123
+    [phone] => 123
+    [provinceCode] => 123
+    [districtCode] => 123
+    [subDistrictCode] => 123
+    [address] => 123
+    [promotionCode] => 123
+    [tags] => Array
+        (
+        )
+
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [productId] => 0
+                    [quantity] => 
+                )
+
+        )
+
+    [source] => 0
+)
+
+{"message":"SUCCESS","statusCode":200,"errorCode":null,"errorMessage":null,"data":{"id":1678,"customerId":0,"fullName":"123","firstName":null,"lastName":null,"phone":"123","email":"123","facebook":null,"source":0,"website":null,"address":"123","description":null,"rating":null,"promotionCode":"123","provinceCode":"123","provinceName":null,"districtCode":"123","districtName":null,"subDistrictCode":"123","subDistrictName":null,"status":1,"createdOn":"2021-08-17T11:11:19.6263075+07:00","createdBy":"","modifiedOn":"2021-08-17T11:11:19.6269146+07:00","modifiedBy":"","advertisingSource":null,"age":null,"opportunityCreatedDate":"2021-08-17T11:11:20","birthday":null,"dateOfBirth":null,"gender":null,"oppSource":null,"ticketClassify":"marketing","contactStatus":1,"processStatus":10,"pendingToDate":null,"opportunityItems":[],"opportunityLogs":[],"opportunityOrder":[],"opportunityTag":[],"opportunityUser":[],"opportunityWork":[]},"total":0,"page":0,"limit":0}

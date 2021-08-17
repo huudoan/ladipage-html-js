@@ -9,7 +9,7 @@
       width: 100%;
     }
     .header-banner {
-      background: url("../media/img/banner_mb_1.png") !important;
+      background: url("../media/img/banner_1_mobile.png");
       background-position-y: 0;
       background-position-x: 46%;
       width: 100%;
@@ -75,15 +75,15 @@
       font-weight: bold;
     }
     #formDeal212 {
-      font-family: SVN-Gilroy Bold;
+      /*font-family: SVN-Gilroy Bold;*/
       font-weight: bold;
-      background: #FFB400;
+      /*background: #FFB400;*/
       height: auto;
       right: 0;
       width: 100%;
       padding: 0;
       border-top: 0;
-      border-radius: 0;
+      
     }
     #formDeal212.row{
       margin: 0px;
@@ -130,8 +130,8 @@
     #formDeal212 input {
       height: 29px;
       margin-bottom: 5px;
-      border-radius: 0px;
       width: 100%;
+      color: #fff;
     }
     #formDeal212 button{
       width: 100%;
@@ -180,7 +180,7 @@
       background: #0A1C5F;
     }
     #formDeal212 .form-group #btnDeal212 {
-      border-radius: 0px;
+      /*border-radius: 0px;*/
       font-size: 13px !important;
       font-family: SVN-Gilroy Bold;
       font-weight: bold;
@@ -189,11 +189,11 @@
     .main-title p {
       background: #FFB400 !important;
     }
-  
+  /*
     img {
       width: 100% !important;
     }
-  
+  */
     .hide-mobile {
         display: none !important;
     }
@@ -233,15 +233,10 @@
       font-weight: bold;
     }
     .main .container .main-content .title.btn-yell p {
-        background: #FFB400;
-        color: #0A1C5F;
-        text-transform: initial;
-        font-weight: normal;
-      }
-      .main .container .main-content .title.btn-yell p span{
-        text-transform: uppercase;
-        font-weight: bold;
-      }
+      background: #FFB400;
+      color: #0A1C5F;
+      text-transform: capitalize;
+    }
     .main .container .main-content .row {
       margin: 0 !important;
       padding: 0 !important;
@@ -439,11 +434,6 @@
     .main #recommended .title {
       font-size: 41px;
       padding: 20px;
-      text-transform: capitalize;
-      
-    }
-    .main .container .row-9 .title span{
-        text-transform: uppercase;
     }
     .main #recommended .main-slider .content-detail {
       width: 80%;
@@ -719,9 +709,6 @@
       }
       .rơw-13 .f-73{
         font-size: 22px !important;
-      }
-      .row-2 p span{
-          text-transform: capitalize;
       }
   }
  

@@ -3,7 +3,6 @@ include ('config.php');
 include ('function.php');
 
 $dataPost = [];
-file_put_contents('./logOrder.txt', print_r($_POST, true) . PHP_EOL, FILE_APPEND);
 if (!empty($_POST['phone'])) {
     $dataPost['phone'] = $_POST['phone'];
     $dataPost['fullName'] = isset($_POST['fullName']) ? filter_var($_POST['fullName'], FILTER_SANITIZE_STRING) : '';
@@ -12,7 +11,7 @@ if (!empty($_POST['phone'])) {
     $dataPost['districtCode'] = isset($_POST['districtCode']) ? filter_var($_POST['districtCode'], FILTER_SANITIZE_STRING) : '';
     $dataPost['subDistrictCode'] = isset($_POST['subDistrictCode']) ? filter_var($_POST['subDistrictCode'], FILTER_SANITIZE_STRING) : '';
     $dataPost['address'] = isset($_POST['address']) ? filter_var($_POST['address'], FILTER_SANITIZE_STRING) : '';
-    $dataPost['quantity'] = isset($_POST['quantity']) ? filter_var($_POST['quantity'], FILTER_SANITIZE_STRING) : '';
+    $dataPost['quantity'] = isset($_POST['quantity']) ? filter_var($_POST['quantity'], FILTER_SANITIZE_STRING) : 1;
     $dataPost['productId'] = $productId;
     $dataPost['source'] = $source;
     $dataPost['promotionCode'] = $promotionCode;

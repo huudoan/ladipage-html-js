@@ -1,118 +1,16 @@
-const expiresCookie = 30;
-const prefixKey = '-511';
 $(document).ready(function () {
     setCookieUtm();
-    // getCookieUtm('utm_source');
-    (function () {
-        var abc = $('.vertical-tab  .nav-tabs').width();
-        $('.vertical-tab  .tab-content').css("margin-left", abc - 1);
-    })();
 
-    /*----------------------------------------------------*/
-    /*	Same Height Div's
-     /*----------------------------------------------------*/
-    if (jQuery.isFunction(jQuery.fn.matchHeight)) {
-        $('.same-height').matchHeight();
-    }
-
-    /*----------------------------------------------------*/
-    /*	Fraction Slider
-    /*----------------------------------------------------*/
-    if (jQuery.isFunction(jQuery.fn.fractionSlider)) {
-        $(window).load(function () {
-            $('.slider').fractionSlider({
-                'fullWidth': true,
-                'controls': true,
-                'responsive': true,
-                'dimensions': "1170,355",
-                'timeout': 5000,
-                'increase': true,
-                'pauseOnHover': true,
-                'slideEndAnimation': false,
-                'autoChange': true
-            });
-        });
-    }
-
-    //  ============================
-    //  = Scroll event function =
-    //  ===========================
-    var goScrolling = function (elem) {
-        var docViewTop = $(window).scrollTop();
-        var docViewBottom = docViewTop + $(window).height();
-        var elemTop = elem.offset().top;
-        var elemBottom = elemTop + elem.height();
-        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-    };
-
-
-    //  =======================
-    //  = Progress bars =
-    //  =======================
-    $('.progress_skill .bar').data('width', $(this).width()).css({
-        width: 0,
-        height: 0
-    });
-    $(window).scroll(function () {
-        $('.progress_skill .bar').each(function () {
-            if (goScrolling($(this))) {
-                $(this).css({
-                    width: $(this).attr('data-value') + '%',
-                    height: $(this).attr('data-height') + '%'
-                });
+    $("#form-order").validate({
+        ignore: ":hidden",
+        rules: {
+            fullname_order: {
+                required: true
+            },
+            telephone_order: {
+                required: true
             }
-        });
-    });
-
-    /*----------------------------------------------------*/
-    /*	Accordians
-     /*----------------------------------------------------*/
-
-    $('.accordion').on('shown.bs.collapse', function (e) {
-        $(e.target).parent().addClass('active_acc');
-        $(e.target).prev().find('.switch').removeClass('fa-plus-circle');
-        $(e.target).prev().find('.switch').addClass('fa-minus-circle');
-    });
-    $('.accordion').on('hidden.bs.collapse', function (e) {
-        $(e.target).parent().removeClass('active_acc');
-        $(e.target).prev().find('.switch').addClass('fa-plus-circle');
-        $(e.target).prev().find('.switch').removeClass('fa-minus-circle');
-    });
-
-
-    /*----------------------------------------------------*/
-    /*	Toggles
-     /*----------------------------------------------------*/
-    $('.toggle').on('shown.bs.collapse', function (e) {
-        $(e.target).parent().addClass('active_acc');
-        $(e.target).prev().find('.switch').removeClass('fa-plus-circle');
-        $(e.target).prev().find('.switch').addClass('fa-minus-circle');
-    });
-    $('.toggle').on('hidden.bs.collapse', function (e) {
-        $(e.target).parent().removeClass('active_acc');
-        $(e.target).prev().find('.switch').addClass('fa-plus-circle');
-        $(e.target).prev().find('.switch').removeClass('fa-minus-circle');
-    });
-
-    /*============
-     BUTTON UP
-     * ===========*/
-    var btnUp = $('<div/>', {'class': 'btntoTop'});
-    btnUp.appendTo('body');
-    $(document).on('click', '.btntoTop', function () {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 700);
-    });
-
-    $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 200)
-            $('.btntoTop').addClass('active');
-        else
-            $('.btntoTop').removeClass('active');
-    });
-
-    $("#contactForm").validate({
+        },
         submitHandler: function (form) {
             let utmCode = getCookieUtm('utm_code');
             if (utmCode === undefined) {
@@ -121,48 +19,68 @@ $(document).ready(function () {
 
             $.ajax({
                 type: "POST",
-                url: "php/contact.php",
+                url: "php/action.php",
+                data: $(form).serialize(),
                 data: {
-                    "fullName": $("#contactForm #fullName").val(),
-                    "email": $("#contactForm #email").val(),
-                    "phone": $("#contactForm #phone").val(),
-                    "address": $("#contactForm #address").val(),
+                    "fullName": $(form).find("#fullname_order").val(),
+                    "phone": $(form).find("#telephone_order").val(),
                     "advertisingSource": utmCode
                 },
-                dataType: "json",
-                success: function (data) {
-                    console.log(data);
+                success: function (response) {
+                    if (response.success == 'success')
+                    {
+                        alert('success');
+                    }
+                    else
+                    {
+                        alert('fail');
+                    }
                 }
             });
-        },
+            return false;
+        }
+    });
+
+    $("#formDeal213").validate({
+        ignore: ":hidden",
         rules: {
-            fullName: {
+            customer_fullname: {
                 required: true
             },
-            email: {
-                required: true,
-                email: true
-            },
-            phone: {
-                required: true
-            },
-            address: {
+            customer_telephone: {
                 required: true
             }
         },
-        highlight: function (element) {
-            $(element)
-                .closest(".control-group")
-                .removeClass("success")
-                .addClass("error");
-        },
-        success: function (element) {
-            $(element)
-                .closest(".control-group")
-                .removeClass("error")
-                .addClass("success");
+        submitHandler: function (form) {
+            let utmCode = getCookieUtm('utm_code');
+            if (utmCode === undefined) {
+                utmCode = '';
+            }
+
+            $.ajax({
+                type: "POST",
+                url: "php/action.php",
+                data: $(form).serialize(),
+                data: {
+                    "fullName": $(form).find("#customer_fullname").val(),
+                    "phone": $(form).find("#customer_telephone").val(),
+                    "advertisingSource": utmCode
+                },
+                success: function (response) {
+                    if (response.success == 'success')
+                    {
+                        alert('success');
+                    }
+                    else
+                    {
+                        alert('fail');
+                    }
+                }
+            });
+            return false;
         }
     });
+
 
     /* ------------------ End Document ------------------ */
 });

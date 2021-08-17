@@ -3,8 +3,21 @@
   .hs img{
     display: none;
   }
+  .logo23 img{
+    margin-top: 5%;
+    width: 70%;
+  }
+.rơw-13 .mobile13{
+  margin-top: 0;
+}
+  .header-banner {
+      background: url("../media/Ipad/Banner_chinh_Ipad Pro_1024.png");
+      height: 579px;
+    }
   .header-banner-main-detail-description .title-larger{
-    font-size: 40px;
+    /*font-size: 40px;*/
+    margin-top: 3%;
+    text-align: center;
   }
   .header-banner-main-detail-description .title-larger span.dropcap{
     float: left;
@@ -17,7 +30,7 @@
     font-size: 150px;
   }
   .header-banner-main-detail-description .btn-yell{
-    font-size: 32px;
+    font-size: 35px;
     padding: 10px 40px;
     height: 45px;
     border-radius: 20px;
@@ -25,7 +38,7 @@
     margin-top: 30px;
   }
   .header-banner-main-detail-description .btn-white{
-    font-size: 40px;
+    font-size: 45px;
     color: #ffffff;
     position: absolute;
     font-family: "Myriad Pro Condensed";
@@ -34,7 +47,9 @@
     margin-top: 19px;
   }
   .main-title p{
-    font-size: 67px;
+    font-size: xx-large;
+    line-height: 1.5;
+    padding: 0;
   }
   .main .container .main-content .title p{
     font-size: 23px;
@@ -80,16 +95,13 @@
   .main #customer_telephone{
     font-size: 25px;
   }
-  .row-5 .form-register .content{
-    height: 520px;
-  }
   .main .container .row-9 .title{
-    font-size: 67px;
+    font-size:xx-large;
   }
-  .main .container .row-10 .container .col-xl-6 .right .list_items .form-buy .row .right .price span{
+  .main .container .row-10 .col-xl-6 .right .list_items .form-buy .row .right .price span{
       font-size: 48px;
   }
-  .main .container .row-10 .container .col-xl-6 .right .list_items .form-buy .row .right .text-note p{
+  .main .container .row-10 .col-xl-6 .right .list_items .form-buy .row .right .text-note p{
     width: 100%;
     font-size: 16px;
     padding-top: 4px;
@@ -98,6 +110,12 @@
   }
   .f-73{
       font-size: 67px;
+  }
+  .row-11 .container .col-xl-4 .box{
+    height: 840px;
+  }
+  .row-11 .container .col-xl-4 .box .order11{
+    margin-left: 15%;
   }
   .main .container .row-11 .container .col-xl-4 .box p.c-white{
     font-size: 21px;
@@ -175,8 +193,8 @@
       display: none;
   }
   .form-footer form button{
-    bottom: 12px;
-    right: 14%;
+    /*bottom: 12px;*/
+    right: 20%;
     padding-top: 3px;
   }
   .form-footer form input{
@@ -189,12 +207,38 @@
   .row-2 .main-slider .owl-nav{
     margin-right: 13px;
   }
-  .row-2 .main-slider .owl-nav{
-    bottom: 45%;
+  /*
+  .main4, .main5 {
+    height: 920px;
+    background-size: 100%;
+  }*/
+
+  .main4{
+    background: url("../media/Ipad/Banner_gia dinh_Ipad Pro_1024.png");
+    background-size: cover;
+    /*background-size: 100% auto;
+    background-repeat: no-repeat;*/
   }
+
+  .main5{
+   background: url("../media/Ipad/Banner_san pham_Ipad Pro_1024.png"); 
+   background-size: cover;
+   /*background-repeat: no-repeat;*/
+  }
+
+  .title4{
+    font-size: xx-large;
+  }
+
+  .form-register .content{
+    font-size: medium;
+  }
+
 }
-@media only screen and (min-width: 1366px) and (max-width: 1366px){
+
+@media only screen and (min-width: 1200px) and (max-width: 1366px){
   .header-banner-main-detail-description .btn-yell{
+    font-size: 32px;
     padding: 10px 46px;
     background: #FFB400;
     color: #0A1C5F;
@@ -202,60 +246,39 @@
     border-radius: 20px;
     text-transform: uppercase;
     position: absolute;
-    font-family: SVN-Gilroy Bold;
+    
     margin-left: 32px;
     letter-spacing: 3px;
   }
-  .header-banner-main-detail-description .title-larger span.dropcap{
-    margin-top: -40px;
+
+  #formDeal212 {
+      height: 187px;
+    }
+
+  #formDeal212 .form-group{
+    margin-top: 22%;
+  
   }
-  .header-banner-main-detail-description .title-larger{
-    line-height: 1.2;
-  }
-  .form-footer .price{
-    color: #FFB400;
-    bottom: 111px;
-    position: absolute;
-    width: 30%;
-    text-align: right;
-    float: right;
-    right: 456px;
-  }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px){
   .header-banner-main-detail-description .btn-yell{
-    margin-top: 30px !important;
+    margin-top: 44px !important;
     margin-left: 36px;
     letter-spacing: 3px;
   }
   .header-banner-main-detail-description .btn-white{
-    font-size: 50px;
+    font-size: 57px;
     color: #ffffff;
     position: absolute;
     font-family: "Myriad Pro Condensed";
-    padding-top: 110px;
+    padding-top: 122px;
     padding-left: 34px;
   }
   .header-banner-main-detail-description .title-larger span.dropcap{
-    float: left;
-    display: block;
+    margin-top: -29px;
   }
-  .header-banner-main-detail-description .title-larger{
-    font-size: 49px;
-  }
-  .row-2 .main-slider .owl-nav{
-    bottom: 13%;
-  }
+  
 
-}
-
-@media only screen and (min-width: 1550px) and (max-width: 1780px) {
-.main .container .row-4 .icon-right img{
-  right: 18%;
-}
-
-}
-
-@media only screen and (min-width: 2550px){
-.main .container .row-4 .icon-right img{
-  right: 18%;
-}
 }

@@ -8,7 +8,14 @@ $res_425 : "only screen and (min-width: 425px) and (max-width: 767px)";
 
 $res_375 : "only screen and (min-width: 375px) and (max-width: 424px)";
 $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
-@media only screen and (min-width: 375px) and (max-width: 424px) {
+/*@media only screen and (min-width: 375px) and (max-width: 424px) */
+@media only screen and (min-width: 375px) and (max-width: 425px){
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+  }
     .header-mobile .logo {
       max-width: 60%;
       margin: 0 auto;
@@ -19,47 +26,73 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
     }
 
     .header-banner {
-      background: url("../media/img/banner_mb_1.png") !important;
-      background-position-y: 0;
-      background-position-x: 46%;
+      background: url("../media/Mobile/Banner_chinh_IP6-7-8-X_375.png");
+      height: 486px;
       width: 100%;
       background-repeat: no-repeat;
-      background-size: cover;
-      padding-top: 70px;
+      
+      padding-top: 10px;
+      /*background-position-y: 0;
+      background-size: 100% 100%;
+      background-position-x: 46%;      
+      height: 830px;*/
     }
     .header-banner-main-detail {
       height: 800px;
     }
-    .header-banner-main-detail-description {
-      padding-left: 0;
+    .header-banner-main-detail-description .w-label{
       padding-right: 0;
-      padding-top: 2%;
-      text-align: right;
+      text-align: center;
       width: 100%;
-      float: right;
-      padding-right: 40px;
+      float: left;
+      font-size: medium;
+      padding: 0;
+      margin-top: 2%;
+      /*padding-right: 40px;
+      font-size: 20px;*/
+      /*padding-top: 2%;*/
+    }
+    .header-banner-main-detail-description .w-label .bn-txt{
+      font-size: 16px;
+    }
+    .header-banner-main-detail-description .header-content{
+      width: 100%;
+      text-align: center;
+      margin-left: 2px;
+      padding: 2%;
     }
     .header-banner-main-detail-description .title-larger {
-      padding: 20px 10px;
+      padding: 10px 0px;
       margin-top: 0;
-      font-size: 23px !important;
+      font-size: 40px;
       white-space: normal;
       letter-spacing: 1px;
-      margin-top: -25px;
-      text-align: left;
+      /*margin-top: -27px;*/
+      text-align: center;
+      color: #fff;
     }
+    .price-order p.small4, .small14{
+      font-size: small;
+    }
+    .header-feature-mobile{
+    font-size: 17px;
+    line-height: 1;
+  }
+  .title4{
+      /*font-size: 35px;*/
+      font-size: xx-large;
+    }
+
+    /*
     .header-banner-main-detail-description .title-larger span {
       color: #FFB400;
-      /*font-size: 90px;*/
-      font-size: 70px;
-      margin-top: -13px;
-      margin-right: 0px;
-    }
+      font-size: 89px;
+    }*/
     .header-banner-main-detail-description .title-larger span.dropcap {
       float: left;
       display: block;
-      /*font-size: 130px;*/
-      font-size: 100px;
+      font-size: 130px;
+      /*font-size: 100px;*/
       margin-right: -3px;
     }
     .header-banner-main-detail-description .title-larger span.dropcap-larger {
@@ -70,8 +103,8 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
       padding-left: 10px;
     }
     .header-banner-main-detail-description .btn-yell {
-      font-size: 21px;
-      padding: 10px 40px;
+      font-size: 16px;
+      padding: 10px 30px;
       background: #FFB400;
       color: #0A1C5F;
       height: 30px;
@@ -81,7 +114,7 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
       white-space: nowrap;
       left: -14px;
       letter-spacing: 0;
-      margin-top: -9px;
+      margin-top: -10px;
     }
     .header-banner-main-detail-description .btn-white {
       font-size: 28px;
@@ -93,9 +126,9 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
     }
   
     #formDeal212 {
-      font-family: SVN-Gilroy Bold;
+      /*font-family: SVN-Gilroy Bold;*/
       font-weight: bold;
-      background: #FFB400;
+      /*background: #FFB400;*/
       height: auto;
       right: 0;
       width: 100%;
@@ -150,7 +183,7 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
     #formDeal212 input {
       height: 29px;
       margin-bottom: 5px;
-      border-radius: 0px;
+      
       width: 100%;
     }
     #formDeal212 button{
@@ -186,6 +219,8 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
       align-content: center;
       vertical-align: middle;
       align-items: center;
+      margin-bottom: 10px;
+      margin-top: 22%;
     }
     #formDeal212 .form-group img {
       width: 100%;
@@ -199,21 +234,31 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
       padding: 10px 58px;
       background: #0A1C5F;
     }
+    /*
     #formDeal212 .form-group #btnDeal212 {
-      border-radius: 0px;
+      /*border-radius: 0px;*/
       font-size: 13px !important;
-      font-family: SVN-Gilroy Bold;
+      /*font-family: SVN-Gilroy Bold;*
       font-weight: bold;
       padding: 0px !important;
+      height: 60px !important;
     }
-    .main-title p {
-      background: #FFB400 !important;
-    }
-  
+   
+    .main4{
+      background: url("../media/img/bg_banner_4_mobile.png");
+  }*/
+  .main5 .bg5{
+    background: url("../media/img/bg_banner_5_mobile.png");
+    float: left;
+  }
+  .main6{
+    float: left;
+  }
+  /*
     img {
       width: 100% !important;
     }
-  
+  */
     .hide-mobile {
         display: none !important;
     }
@@ -234,10 +279,19 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
     }
   
     .main {
-      background: #0A1C5F;
+      /*background: #0A1C5F;*/
     }
+.main-title1 .container{
+  background-color: #fff;
+}
+.main-title1 .container .title{
+  font-size:  35px;
+}
     .main-title p {
-      font-size: 48px;
+      font-size: 35px;
+      color: #FCD505;
+      font-family: Roboto Light;
+      line-height: 1.5;
     }
     .main .container {
       margin: 0 !important;
@@ -247,31 +301,24 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
       margin-top: 0;
     }
     .main .container .main-content .title p {
-      /*font-size: 17px;*/
-      font-size: medium;
+      font-size: 17px;
       text-align: center;
       font-weight: bold;
     }
-    .main-content .title.btn-yell p {
+    .main .container .main-content .title.btn-yell p {
       background: #FFB400;
       color: #0A1C5F;
-      text-transform: initial;
-      font-weight: normal;
-      font-size: large;
+      text-transform: capitalize;
     }
-    .main-content .title.btn-yell p span{
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-    .main-content .row {
+    .main .container .main-content .row {
       margin: 0 !important;
       padding: 0 !important;
     }
-    .main-content .row img {
+    .main .container .main-content .row img {
       max-width: 100%;
-      /*height: 310px;*/
+      height: 310px;
     }
-    .main-content .row p {
+    .main .container .main-content .row p {
       font-family: "Myriad Pro Condensed";
       font-size: 22px;
       background: #0A1C5F;
@@ -281,7 +328,7 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
       padding-left: 10px;
       padding-right: 10px;
     }
-    .row-11 .container .col-xl-4 .box p.c-blue{
+    .main .container .row-11 .container .col-xl-4 .box p.c-blue{
       margin-bottom: 50px;
       font-weight: bold;
     }
@@ -303,12 +350,12 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
       background: #0A1C5F;
     }
     .main #consultation .title {
-      background: #FFB400;
+      /*background: #FFB400;
       padding: 20px;
       margin-left: 10px;
       margin-right: 10px;
       font-size: 30px;
-      font-family: "Myriad Pro Condensed";
+      font-family: "Myriad Pro Condensed";*/
     }
     .main #row-4 {
       background: #0A1C5F;
@@ -343,25 +390,22 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
       font-family: "Myriad Pro Condensed";
     }
     .main .row-5 .form-register-title {
-      /*font-size: 25px !important;
-      /*color: #0A1C5F !important;
-      background: #FFB400 !important;*/
+      font-size: 25px !important;
+      color: #0A1C5F !important;
+      background: #FFB400 !important;
       font-weight: bold;
-      font-size: x-large;
     }
-    .row-5 .form-register .content {
+    .main .row-5 .content {
       width: 100%;
       padding: 0 !important;
-      /*height: 560px !important;*/
-      height: 650px;
+      height: 560px !important;
     }
     .main .row-5 .content p {
       width: 100% !important;
-      /*height: 40px !important;*/
-      height: auto !important;
+      height: 40px !important;
     }
     .main .row-5 .content p label {
-      font-size: large !important;
+      font-size: 20px !important;
     }
     .main .row-5 .content p input {
       width: 20px !important;
@@ -396,7 +440,7 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
       font-size: 48px !important;
     }
     .main .row-6 .container .title {
-      font-size: 20px !important;
+      font-size: 22px !important;
       width: 100% !important;
     }
     .main .row-6 .container .excerpt {
@@ -462,17 +506,13 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
       margin-top: 5px;
     }
     .main #recommended {
-      background-image: url("../media/img/banner-4.png");
+     /* background-image: url("../media/img/Mask Group 94.png");
+      background-size: 100%;
+      height: 1150px;*/
     }
     .main #recommended .title {
-      /*font-size: 34px;*/
-      font-size: xx-large;
+      font-size: 34px;
       padding: 20px;
-      text-transform: capitalize;
-      
-    }
-    .main .container .row-9 .title span{
-        text-transform: uppercase;
     }
     .main #recommended .main-slider .content-detail {
       width: 80%;
@@ -496,11 +536,12 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
       margin-top: 20px !important;
       margin-bottom: 20px;
     }
+    /*
     .main #row-10 .row .text-center {
       font-size: 38px;
-    }
+    }*/
     .main #row-10 .row .text.checkbox{
-      margin-left: -73px;
+      margin-left: -64px;
     }
     .main #row-10 .row .number {
       font-size: 22px !important;
@@ -508,18 +549,17 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
 
     }
     .main #row-10 .row .item {
-      margin: 15px;
+      margin: 20px;
       line-height: 30px;
     }
     .main #row-10 .row .text {
-      padding-left: 54px;
+      padding-left: 50px;
       font-size: 16px !important;
       height: 31px;
       line-height: 1.2;
       display: flex;
       font-weight: bold;
       align-items: center;
-      padding-right: 5px;
     }
     .main #row-10 .row .checkbox img{
       width: 92% !important;
@@ -538,13 +578,17 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
         text-align: center;
 
     }
-    .main .container .row-10 .container .col-xl-6 .right .list_items .form-buy .row .right .price{
+    .row-10 .container .right .list_items .form-buy .row .right .price{
       margin-top: 48px !important;
     }
-    .main .container .row-10 .container .col-xl-6 .right .list_items .form-buy .row .right .price p{
+    .row-10 .container .right .list_items .form-buy .row .right .price p{
       margin-bottom: 0px;
       white-space: nowrap;
       font-size: 22px;
+    }
+    .header-banner-main-detail-description .header-content p{
+      font-size: large;
+      line-height: 1;
     }
     .main .row {
       margin: 0 !important;
@@ -579,13 +623,21 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
       margin-top: 20px;
     }
     .main h2 {
-      font-size: 48px !important;
+      /*font-size: 48px !important;*/
     }
     .main h2.text-center {
       font-size: 27px !important;
     }
-    .main .container .row-10 .container .col-xl-6 .right h2 span{
-      font-size: 33px !important;
+    /*
+    .main .container .row-10 .container .back-img{
+      background-image: url(../media/img/bg_9_mobile.png);
+      background-size: 100% 100%;
+    }*/
+    .row-10 .container .right h2.text-center{
+      font-size: 29px;
+    }
+    .row-10 .container .right h2 span{
+      font-size: 35px;
     }
     .main .price.mt-4 .span {
       font-size: 47px !important;
@@ -615,7 +667,7 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
     .footer .container .row-14 a.footer_logo img{
       padding: 10px!important;
     }
-    .main .container .row-10 .container .col-xl-6 .right .list_items .form-buy .row .left img{
+    .main .container .row-10 .container .right .list_items .form-buy .row .left img{
       margin-left: 0px;
       margin-bottom: 10px;
     }
@@ -628,7 +680,7 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
     }
     .header-banner-main-detail-description .btn-white{
       left: -16px !important;
-      font-size: 26px;
+      font-size: 25px;
 
     }
     .d-mr{
@@ -657,12 +709,18 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
     .mobile{
       opacity: 0;
     }
-    .main .container .rơw-13 .box-footer{
+    .rơw-13 .box-footer{
       margin-top: -75px;
     }
-    .main .container .rơw-13 .container .row .box img{
-      width: 80% !important;
-      margin-top: -24px;
+    .rơw-13 .container .row .box img{
+      /*width: 80% !important;
+      margin-top: -24px;*/
+    }
+    .rơw-13 .row131{
+      margin-top: -10% !important;
+    }
+    .rơw-13 .container .row .form-order h3{
+      font-size: 27px;
     }
     .cs-khung{
       width: 127px;
@@ -722,11 +780,12 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
       margin-left: 7px;
   
     }
+    /*
     #formDeal212 {
-      height: 87px;
+      /*height: 87px;*
       border-top: 0;
       border-radius: 25px 25px 0px 0px;
-    }
+    }*/
     #formDeal212 img.Asset_2{
       width: 90% !important;
       margin-top: -37px;
@@ -747,23 +806,20 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
       height: 50px;
       position: absolute;
   }
-    .form-buy{
-        margin-top: 15px;
-    }
-    .main .container .row-10 .container .col-xl-6 .right .list_items .item{
-      height: 48px;
-    }
  
   }
+
+  /**********************************************************************************************/
   @media only screen and (min-width: 375px) and (max-width: 375px){
     .header-banner-main-detail-description{
       padding-right: 11px !important;
     }
+    /*
     .header-banner-main-detail-description .title-larger{
       font-size: 20px !important;
-      margin-top: -28px;
+      margin-top: -27px;
       text-align: left;
-    }
+    }*/
     .main #anchor_form_order label{
       font-size: 16px !important;
     }
@@ -805,7 +861,7 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
       width: 20px !important;
       margin-top: 1px !important;
     }
-    .main .container .row-10 .container .col-xl-6 .right .text-small{
+    .main .container .row-10 .container .right .text-small{
       padding-left: 20px;
     }
     .main .container .row-12 .container .user-content .author{
@@ -829,7 +885,7 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
         position: absolute;
     }
     #formDeal212 {
-      height: 87px;
+      height: 187px;
       border-top: 0;
       border-radius: 25px 25px 0px 0px;
     }
@@ -855,12 +911,10 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
 	  .header-banner-main-detail-description .btn-white{
 		  margin-top:0px;
 	  }
-    .header-banner-main-detail-description .btn-yell{
-      margin-top: -10px !important;
-    }
-    #formDeal212 .price{
-      font-size: 20px;
-    }
+	  .main .f-73{
+		  
+	  }
+    
   }
   
   @media only screen and (min-width: 414px) and (max-width: 414px) {
@@ -870,12 +924,26 @@ $res_320 : "only screen and (min-width: 320px) and (max-width: 374px)"; */
 	  #formDeal212 .check{
 		  top:-40px;
 	  }
+    #formDeal212 .form-group{
+      width: 96%;
+    }
 	  #formDeal212 .form-group label{
 		  padding-right:45px !important;
 	  }
 	  #formDeal212 img.Asset_2{
 		  margin-top:-45px;
-		  margin-bottom:40px;
-		  
+		  margin-bottom:40px;		  
 	  }
-  }
+    .main-slider .owl-nav {
+      visibility: hidden;
+    }
+    #formDeal212 .ft_left{
+      width: 40%;
+    }
+    .header-banner {
+      background: url("../media/Mobile/Banner_chinh_IP6P-7P-8P_414.png");
+      background-repeat: no-repeat;
+      height: 537px;
+    }
+
+}
