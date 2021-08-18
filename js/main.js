@@ -12,7 +12,7 @@ $(document).ready(function () {
             }
         },
         submitHandler: function (form) {
-            $(form).find("#btnOrder21").disable();
+            $(form).find("#btnOrder21").hide();
             let utmCode = getCookieUtm('utm_code');
             if (utmCode === undefined) {
                 utmCode = '';
@@ -36,8 +36,9 @@ $(document).ready(function () {
                     "tags": tagIds,
                 },
                 success: function (response) {
-                    $(form).find("#btnOrder21").enable();
-                    $("#form-order").reset();
+                    $(form).find("#btnOrder21").show();
+                    $(form).find("#fullname_order").val('');
+                    $(form).find("#telephone_order").val('');
                     if (response.success === true) {
                         alert('Thành công');
                     } else {
@@ -60,7 +61,7 @@ $(document).ready(function () {
             }
         },
         submitHandler: function (form) {
-            $(form).find("#btnDeal212").disable();
+            $(form).find("#btnDeal212").hide();
             let utmCode = getCookieUtm('utm_code');
             if (utmCode === undefined) {
                 utmCode = '';
@@ -84,8 +85,9 @@ $(document).ready(function () {
                     "tags": tagIds,
                 },
                 success: function (response) {
-                    $(form).find("#btnDeal212").enable();
-                    $("#formDeal213").reset();
+                    $(form).find("#btnDeal212").show();
+                    $(form).find("#customer_fullname").val('');
+                    $(form).find("#customer_telephone").val('');
                     if (response.success === true) {
                         alert('Thành công');
                     } else {
