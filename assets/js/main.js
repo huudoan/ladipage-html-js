@@ -26,7 +26,8 @@ $(document).ready(function () {
             },
         },
         submitHandler: function (form) {
-            $(form).find("#btn-send-info-header").hide();
+            $('#loading-request').show();
+            $(form).find("#btn-send-info-header").prop('disabled', true);
             let utmCode = getCookieUtm('utm_code');
             if (utmCode === undefined) {
                 utmCode = '';
@@ -41,7 +42,8 @@ $(document).ready(function () {
                     "advertisingSource": utmCode,
                 },
                 success: function (response) {
-                    $(form).find("#btn-send-info-header").show();
+                    $('#loading-request').hide();
+                    $(form).find("#btn-send-info-header").prop('disabled', false);
                     if (response.success === true) {
                         $(form).find(".fullname").val('');
                         $(form).find(".telephone").val('');
@@ -75,7 +77,8 @@ $(document).ready(function () {
             },
         },
         submitHandler: function (form) {
-            $(form).find("#btn-send-info").hide();
+            $('#loading-request').show();
+            $(form).find("#btn-send-info").prop('disabled', true);
             let utmCode = getCookieUtm('utm_code');
             if (utmCode === undefined) {
                 utmCode = '';
@@ -90,7 +93,8 @@ $(document).ready(function () {
                     "advertisingSource": utmCode,
                 },
                 success: function (response) {
-                    $(form).find("#btn-send-info").show();
+                    $('#loading-request').hide();
+                    $(form).find("#btn-send-info").prop('disabled', false);
                     if (response.success === true) {
                         $(form).find(".fullname").val('');
                         $(form).find(".telephone").val('');
@@ -124,7 +128,8 @@ $(document).ready(function () {
             },
         },
         submitHandler: function (form) {
-            $(form).find(".btn-register").hide();
+            $('#loading-request').show();
+            $(form).find(".btn-register").prop('disabled', true);
             let utmCode = getCookieUtm('utm_code');
             if (utmCode === undefined) {
                 utmCode = '';
@@ -140,7 +145,8 @@ $(document).ready(function () {
                     "advertisingSource": utmCode,
                 },
                 success: function (response) {
-                    $(form).find(".btn-register").show();
+                    $('#loading-request').hide();
+                    $(form).find(".btn-register").prop('disabled', false);
                     if (response.success === true) {
                         $(form).find(".fullname").val('');
                         $(form).find(".telephone").val('');
@@ -181,7 +187,8 @@ $(document).ready(function () {
             },
         },
         submitHandler: function (form) {
-            $(form).find(".btn-order").hide();
+            $('#loading-request').show();
+            $(form).find(".btn-order").prop('disabled', true);
             let utmCode = getCookieUtm('utm_code');
             if (utmCode === undefined) {
                 utmCode = '';
@@ -198,7 +205,8 @@ $(document).ready(function () {
                     "advertisingSource": utmCode,
                 },
                 success: function (response) {
-                    $(form).find(".btn-order").show();
+                    $('#loading-request').hide();
+                    $(form).find(".btn-order").prop('disabled', false);
                     if (response.success === true) {
                         $(form).find(".fullname").val('');
                         $(form).find(".telephone").val('');
@@ -212,6 +220,14 @@ $(document).ready(function () {
             });
             return false;
         }
+    });
+
+    $(document).on("click",".close-modal",function() {
+        $('#modal-notif').modal('hide');
+    });
+
+    $(document).on("click",".close-modal",function() {
+        $('#modal-success').modal('hide');
     });
 });
 

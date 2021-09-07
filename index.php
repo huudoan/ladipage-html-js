@@ -66,7 +66,7 @@ include('php/function.php');
                         </div>
                     </div>
                     <div class="modal-footer border-top-0 flex-column align-items-center">
-                        <button type="button" class="btn btn-continue">Tiếp tục tìm hiểu sản phẩm</button>
+                        <button id="btn-continue" type="button" class="btn btn-continue">Tiếp tục tìm hiểu sản phẩm</button>
                         <!--                <button type="button" class="btn btn-back" data-dismiss="modal">Quay về trang</button>-->
                     </div>
                 </div>
@@ -79,7 +79,7 @@ include('php/function.php');
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title text-uppercase w-100 text-center">Thông báo</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <button id="close-modal" type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -90,6 +90,11 @@ include('php/function.php');
                 </div>
             </div>
         </div>
+        <!--loading-->
+        <div id="loading-request" class="loading" style="display: none">
+            <div class="donut"></div>
+        </div>
+        <!--loading-->
     </div>
 <script src="./assets/js/jquery-3.1.1.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
