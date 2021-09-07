@@ -50,11 +50,9 @@
                 <div class="input-form">
                     <div class="form-group">
                         <input type="text" class="fullname" name="fullname" placeholder="Họ tên"/>
-                        <label class="error">*<span> Trường bắt buộc</span></label>
                     </div>
                     <div class="form-group">
                         <input type="text" class="telephone" name="telephone" placeholder="Số điện thoại"/>
-                        <label class="error">*<span> Trường bắt buộc</span></label>
                     </div>
                 </div>
                 <button id="btn-send-info-header" name="send-info" class="btn-send-info">Mua ngay</button>

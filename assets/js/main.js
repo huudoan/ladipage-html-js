@@ -11,6 +11,14 @@ $(document).ready(function () {
                 required: true
             }
         },
+        messages: {
+            fullname: {
+                required: "Họ tên bắt buộc",
+            },
+            telephone: {
+                required: "Số điện thoại bắt buộc",
+            },
+        },
         submitHandler: function (form) {
             $(form).find("#btn-send-info-header").hide();
             let utmCode = getCookieUtm('utm_code');
@@ -52,6 +60,14 @@ $(document).ready(function () {
                 required: true
             }
         },
+        messages: {
+            fullname: {
+                required: "Họ tên bắt buộc",
+            },
+            telephone: {
+                required: "Số điện thoại bắt buộc",
+            },
+        },
         submitHandler: function (form) {
             $(form).find("#btn-send-info").hide();
             let utmCode = getCookieUtm('utm_code');
@@ -92,6 +108,14 @@ $(document).ready(function () {
             telephone: {
                 required: true
             }
+        },
+        messages: {
+            fullname: {
+                required: "Họ tên bắt buộc",
+            },
+            telephone: {
+                required: "Số điện thoại bắt buộc",
+            },
         },
         submitHandler: function (form) {
             $(form).find(".btn-register").hide();
@@ -138,6 +162,17 @@ $(document).ready(function () {
             address: {
                 required: true
             }
+        },
+        messages: {
+            fullname: {
+                required: "Họ tên bắt buộc",
+            },
+            telephone: {
+                required: "Số điện thoại bắt buộc",
+            },
+            address: {
+                required: "Địa chỉ bắt buộc",
+            },
         },
         submitHandler: function (form) {
             $(form).find(".btn-order").hide();

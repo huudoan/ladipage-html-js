@@ -53,6 +53,11 @@ button {
   -o-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
 }
 
 @-webkit-keyframes phonering-alo-circle-img-anim {
@@ -586,6 +591,7 @@ footer .main-footer .bottom-footer .col-footer-last {
 }
 
 .wrapper-landing header .header .logo img {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -909,6 +915,7 @@ footer .main-footer .bottom-footer .col-footer-last {
      -moz-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  width: 100%;
 }
 
 .wrapper-landing header .box-ads-header .inner-ads-header .ads-form .form-group {
@@ -1929,6 +1936,7 @@ footer .main-footer .bottom-footer .col-footer-last {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .wrapper-landing main .box-bg-4 .box-product-1 .box-right-product .ads-form input {

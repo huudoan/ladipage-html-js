@@ -17,7 +17,7 @@ include('php/function.php');
 
     <!-- SEO Facebook -->
     <meta property="og:locale" content="vi_VN"/>
-    <meta property="og:site_name" content="<?php echo $domainName; ?>"/>
+    <meta property="og:site_name" content="<?php echo $siteName; ?>"/>
     <meta property="og:url" content="<?php echo $domainName; ?>" itemprop="url"/>
     <meta property="og:image" content="<?php echo $metaImage; ?>" itemprop="thumbnailUrl"/>
     <meta property="og:title" content="<?php echo $metaTitle; ?>" itemprop="headline"/>
