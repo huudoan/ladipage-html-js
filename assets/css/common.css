@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "SVN-Avo";
+  src: url("../font/SVN-Avo.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Avo Bold";
+  src: url("../font/SVN-Avo-bold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Myriad Pro Condensed";
+  src: url("../font/MYRIADPRO-COND.OTF") format("opentype");
+}
+
+@font-face {
+  font-family: "Myriad Pro Bold";
+  src: url("../font/MYRIADPRO-BOLD.OTF") format("opentype");
+}
+
+/*set color main*/
+/*end set color main*/
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.rs {
+  padding: 0;
+  margin: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@-webkit-keyframes phonering-alo-circle-img-anim {
+  0% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    -moz-transform: rotate(0) scale(1) skew(1deg);
+    -o-transform: rotate(0) scale(1) skew(1deg);
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+  10% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    -moz-transform: rotate(-25deg) scale(1) skew(1deg);
+    -o-transform: rotate(-25deg) scale(1) skew(1deg);
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    -moz-transform: rotate(25deg) scale(1) skew(1deg);
+    -o-transform: rotate(25deg) scale(1) skew(1deg);
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    -moz-transform: rotate(-25deg) scale(1) skew(1deg);
+    -o-transform: rotate(-25deg) scale(1) skew(1deg);
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    -moz-transform: rotate(25deg) scale(1) skew(1deg);
+    -o-transform: rotate(25deg) scale(1) skew(1deg);
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    -moz-transform: rotate(0) scale(1) skew(1deg);
+    -o-transform: rotate(0) scale(1) skew(1deg);
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    -moz-transform: rotate(0) scale(1) skew(1deg);
+    -o-transform: rotate(0) scale(1) skew(1deg);
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+}
+
+@-moz-keyframes phonering-alo-circle-img-anim {
+  0% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    -moz-transform: rotate(0) scale(1) skew(1deg);
+    -o-transform: rotate(0) scale(1) skew(1deg);
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+  10% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    -moz-transform: rotate(-25deg) scale(1) skew(1deg);
+    -o-transform: rotate(-25deg) scale(1) skew(1deg);
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    -moz-transform: rotate(25deg) scale(1) skew(1deg);
+    -o-transform: rotate(25deg) scale(1) skew(1deg);
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    -moz-transform: rotate(-25deg) scale(1) skew(1deg);
+    -o-transform: rotate(-25deg) scale(1) skew(1deg);
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    -moz-transform: rotate(25deg) scale(1) skew(1deg);
+    -o-transform: rotate(25deg) scale(1) skew(1deg);
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    -moz-transform: rotate(0) scale(1) skew(1deg);
+    -o-transform: rotate(0) scale(1) skew(1deg);
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    -moz-transform: rotate(0) scale(1) skew(1deg);
+    -o-transform: rotate(0) scale(1) skew(1deg);
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+}
+
+@-o-keyframes phonering-alo-circle-img-anim {
+  0% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    -moz-transform: rotate(0) scale(1) skew(1deg);
+    -o-transform: rotate(0) scale(1) skew(1deg);
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+  10% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    -moz-transform: rotate(-25deg) scale(1) skew(1deg);
+    -o-transform: rotate(-25deg) scale(1) skew(1deg);
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    -moz-transform: rotate(25deg) scale(1) skew(1deg);
+    -o-transform: rotate(25deg) scale(1) skew(1deg);
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    -moz-transform: rotate(-25deg) scale(1) skew(1deg);
+    -o-transform: rotate(-25deg) scale(1) skew(1deg);
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    -moz-transform: rotate(25deg) scale(1) skew(1deg);
+    -o-transform: rotate(25deg) scale(1) skew(1deg);
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    -moz-transform: rotate(0) scale(1) skew(1deg);
+    -o-transform: rotate(0) scale(1) skew(1deg);
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    -moz-transform: rotate(0) scale(1) skew(1deg);
+    -o-transform: rotate(0) scale(1) skew(1deg);
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+}
+
+@keyframes phonering-alo-circle-img-anim {
+  0% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    -moz-transform: rotate(0) scale(1) skew(1deg);
+    -o-transform: rotate(0) scale(1) skew(1deg);
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+  10% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    -moz-transform: rotate(-25deg) scale(1) skew(1deg);
+    -o-transform: rotate(-25deg) scale(1) skew(1deg);
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    -moz-transform: rotate(25deg) scale(1) skew(1deg);
+    -o-transform: rotate(25deg) scale(1) skew(1deg);
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    -moz-transform: rotate(-25deg) scale(1) skew(1deg);
+    -o-transform: rotate(-25deg) scale(1) skew(1deg);
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    -moz-transform: rotate(25deg) scale(1) skew(1deg);
+    -o-transform: rotate(25deg) scale(1) skew(1deg);
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    -moz-transform: rotate(0) scale(1) skew(1deg);
+    -o-transform: rotate(0) scale(1) skew(1deg);
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    -moz-transform: rotate(0) scale(1) skew(1deg);
+    -o-transform: rotate(0) scale(1) skew(1deg);
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+}

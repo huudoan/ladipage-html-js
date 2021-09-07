@@ -33,67 +33,30 @@ include('php/function.php');
     <meta name="twitter:image" content="<?php echo $metaImage; ?>"/>
     <!-- End SEO Twitter -->
 
-    <link rel="stylesheet" type="text/css" href="./public/css/app.css">
-    <link rel="stylesheet" type="text/css" href="./public/css/reponsive_320.css">
-    <link rel="stylesheet" type="text/css" href="./public/css/reponsive_375.css">
-    <link rel="stylesheet" type="text/css" href="./public/css/reponsive_425.css">
-    <link rel="stylesheet" type="text/css" href="./public/css/reponsive_540.css">
-    <link rel="stylesheet" type="text/css" href="./public/css/reponsive_768.css">
-    <link rel="stylesheet" type="text/css" href="./public/css/reponsive_1024.css">
-    <link rel="stylesheet" type="text/css" href="./public/css/reponsive_1200.css">
-    <link rel="stylesheet" type="text/css" href="./public/css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="./public/css/OwlCarousel/owl.carousel.min.css">
+    <link rel="icon" href="./assets/images/favicon.ico">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
     <script>
         const expiresCookie = <?php echo $expiresCookie; ?>;
         const prefixKey = '<?php echo $prefixKey; ?>';
+        const price = '<?php echo $price; ?>';
     </script>
 </head>
-<body class="homev2">
-
-<?php include('templates/header.php'); ?>
-<?php include('templates/main.php'); ?>
-<?php include('templates/footer.php'); ?>
-
-<script type="text/javascript" src="./public/js/jquery.min.js"></script>
-<script type="text/javascript" src="./public/js/lazyload.min.js"></script>
-<script type="text/javascript" src="./public/js/bootstrap/bootstrap.min.js"></script>
-<script type="text/javascript" src="./public/js/OwlCarousel/jquery.min.js"></script>
-<script type="text/javascript" src="./public/js/OwlCarousel/owl.carousel.min.js"></script>
-<script type="text/javascript" src="./public/js/bootstrap/bootstrap.min.js"></script>
-<script type="text/javascript" src="./public/js/OwlCarousel/jquery.min.js"></script>
-<script type="text/javascript" src="./public/js/OwlCarousel/owl.carousel.min.js"></script>
-<script type="text/javascript" src="./public/js/app.js"></script>
+<body class="">
+    <div class="wrapper-landing">
+        <?php include('templates/header.php'); ?>
+        <?php include('templates/main.php'); ?>
+        <?php include('templates/footer.php'); ?>
+    </div>
+<script src="./assets/js/jquery-3.1.1.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+<script src="./assets/js/page_all.js"></script>
 <!-- Action request data -->
-<script type="text/javascript" src="js/jquery.cookie.min.js"></script>
-<script type="text/javascript" src="js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script src="./assets/js/jquery.cookie.min.js"></script>
+<script src="./assets/js/jquery.validate.min.js"></script>
+<script src="./assets/js/main.js"></script>
 <!-- Action request data -->
-<script>
-    $(document).ready(function () {
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            margin: 10,
-            nav: true,
-            loop: true,
-            animateOut: 'fadeOut',
-            autoplay: true,
-            autoplayTimeout: 5000,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1,
-                },
-                1200: {
-                    items: 1
-                }
-            }
-        });
-    })
-</script>
 </body>
 </html>

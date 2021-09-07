@@ -25,6 +25,7 @@ function callAPI($url, $data, $method = 'POST')
     curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
     // EXECUTE:
     $result = curl_exec($curl);
+//	file_put_contents('./logOrder.txt', print_r($result, true) . PHP_EOL, FILE_APPEND);
     if (!$result) {
         die("Connection Failure");
     }
@@ -38,14 +39,15 @@ function createOpportunity($url, $dataPost, $method = 'POST')
     $data = array(
         'customerId' => 0,
         'fullName' => $dataPost['fullName'],
-        'email' => $dataPost['fullName'],
-        'phone' => $dataPost['fullName'],
+        'email' => $dataPost['email'],
+        'phone' => $dataPost['phone'],
+		'description' => $dataPost['description'],
         'advertisingSource' => $dataPost['advertisingSource'],
-        'provinceCode' => $dataPost['fullName'],
-        'districtCode' => $dataPost['fullName'],
-        'subDistrictCode' => $dataPost['fullName'],
-        'address' => $dataPost['fullName'],
-        'promotionCode' => $dataPost['fullName'],
+        'provinceCode' => $dataPost['provinceCode'],
+        'districtCode' => $dataPost['districtCode'],
+        'subDistrictCode' => $dataPost['subDistrictCode'],
+        'address' => $dataPost['address'],
+        'promotionCode' => $dataPost['promotionCode'],
         'tags' => $dataPost['tags'],
         'items' => [
             ['productId' => $dataPost['productId'], 'quantity' => $dataPost['quantity']]
@@ -53,6 +55,7 @@ function createOpportunity($url, $dataPost, $method = 'POST')
         'source' => $dataPost['source']
     );
 
+//	file_put_contents('./logOrder.txt', print_r($url, true) . PHP_EOL, FILE_APPEND);
     return callAPI($url, $data, $method);
 }
 ?>

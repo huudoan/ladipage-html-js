@@ -1,24 +1,17 @@
 Array
 (
-    [fullName] => 123
-    [phone] => 123
-    [advertisingSource] => 
-)
-
-createOpportunity
-http://192.168.100.27:5616/api/FcOpportunity
-Array
-(
-    [phone] => 123
-    [fullName] => 123
+    [phone] => 0985611758
+    [fullName] => Nguyen Huu Doan TEST
     [email] => 
+    [description] => 
+    [advertisingSource] => 
     [provinceCode] => 
     [districtCode] => 
     [subDistrictCode] => 
     [address] => 
-    [quantity] => 
-    [productId] => 0
-    [source] => 0
+    [quantity] => 1
+    [productId] => 19
+    [source] => 50
     [promotionCode] => 
     [tags] => Array
         (
@@ -27,32 +20,95 @@ Array
 )
 
 http://192.168.100.27:5616/api/FcOpportunity
+{"message":"SUCCESS","statusCode":200,"errorCode":null,"errorMessage":null,"data":{"id":1702,"customerId":0,"fullName":"Nguyen Huu Doan TEST","firstName":null,"lastName":null,"phone":"0985611758","email":"","facebook":null,"source":50,"website":null,"address":"","description":"","rating":null,"promotionCode":"","provinceCode":"","provinceName":null,"districtCode":"","districtName":null,"subDistrictCode":"","subDistrictName":null,"status":1,"createdOn":"2021-09-06T16:34:44.1424962+07:00","createdBy":"","modifiedOn":"2021-09-06T16:34:44.1430175+07:00","modifiedBy":"","advertisingSource":"","age":null,"opportunityCreatedDate":"2021-09-06T16:34:45","birthday":null,"dateOfBirth":null,"gender":null,"oppSource":null,"ticketClassify":"marketing","contactStatus":3,"processStatus":10,"pendingToDate":null,"orderCode":null,"type":1,"referenceOppId":null,"opportunityItems":[{"id":3112,"oppId":1702,"productId":19,"quantity":1,"status":null,"createdOn":"2021-09-06T16:34:45.4543637+07:00","createdBy":"","modifiedOn":"2021-09-06T16:34:45.4552411+07:00","modifiedBy":""}],"opportunityLogs":[],"opportunityOrder":[],"opportunityTag":[],"opportunityUser":[],"opportunityWork":[]},"total":0,"page":0,"limit":0}
 Array
 (
-    [customerId] => 0
-    [fullName] => 123
-    [email] => 123
-    [phone] => 123
-    [provinceCode] => 123
-    [districtCode] => 123
-    [subDistrictCode] => 123
-    [address] => 123
-    [promotionCode] => 123
-    [tags] => Array
+    [message] => SUCCESS
+    [statusCode] => 200
+    [errorCode] => 
+    [errorMessage] => 
+    [data] => Array
         (
-        )
-
-    [items] => Array
-        (
-            [0] => Array
+            [id] => 1702
+            [customerId] => 0
+            [fullName] => Nguyen Huu Doan TEST
+            [firstName] => 
+            [lastName] => 
+            [phone] => 0985611758
+            [email] => 
+            [facebook] => 
+            [source] => 50
+            [website] => 
+            [address] => 
+            [description] => 
+            [rating] => 
+            [promotionCode] => 
+            [provinceCode] => 
+            [provinceName] => 
+            [districtCode] => 
+            [districtName] => 
+            [subDistrictCode] => 
+            [subDistrictName] => 
+            [status] => 1
+            [createdOn] => 2021-09-06T16:34:44.1424962+07:00
+            [createdBy] => 
+            [modifiedOn] => 2021-09-06T16:34:44.1430175+07:00
+            [modifiedBy] => 
+            [advertisingSource] => 
+            [age] => 
+            [opportunityCreatedDate] => 2021-09-06T16:34:45
+            [birthday] => 
+            [dateOfBirth] => 
+            [gender] => 
+            [oppSource] => 
+            [ticketClassify] => marketing
+            [contactStatus] => 3
+            [processStatus] => 10
+            [pendingToDate] => 
+            [orderCode] => 
+            [type] => 1
+            [referenceOppId] => 
+            [opportunityItems] => Array
                 (
-                    [productId] => 0
-                    [quantity] => 
+                    [0] => Array
+                        (
+                            [id] => 3112
+                            [oppId] => 1702
+                            [productId] => 19
+                            [quantity] => 1
+                            [status] => 
+                            [createdOn] => 2021-09-06T16:34:45.4543637+07:00
+                            [createdBy] => 
+                            [modifiedOn] => 2021-09-06T16:34:45.4552411+07:00
+                            [modifiedBy] => 
+                        )
+
+                )
+
+            [opportunityLogs] => Array
+                (
+                )
+
+            [opportunityOrder] => Array
+                (
+                )
+
+            [opportunityTag] => Array
+                (
+                )
+
+            [opportunityUser] => Array
+                (
+                )
+
+            [opportunityWork] => Array
+                (
                 )
 
         )
 
-    [source] => 0
+    [total] => 0
+    [page] => 0
+    [limit] => 0
 )
 
-{"message":"SUCCESS","statusCode":200,"errorCode":null,"errorMessage":null,"data":{"id":1678,"customerId":0,"fullName":"123","firstName":null,"lastName":null,"phone":"123","email":"123","facebook":null,"source":0,"website":null,"address":"123","description":null,"rating":null,"promotionCode":"123","provinceCode":"123","provinceName":null,"districtCode":"123","districtName":null,"subDistrictCode":"123","subDistrictName":null,"status":1,"createdOn":"2021-08-17T11:11:19.6263075+07:00","createdBy":"","modifiedOn":"2021-08-17T11:11:19.6269146+07:00","modifiedBy":"","advertisingSource":null,"age":null,"opportunityCreatedDate":"2021-08-17T11:11:20","birthday":null,"dateOfBirth":null,"gender":null,"oppSource":null,"ticketClassify":"marketing","contactStatus":1,"processStatus":10,"pendingToDate":null,"opportunityItems":[],"opportunityLogs":[],"opportunityOrder":[],"opportunityTag":[],"opportunityUser":[],"opportunityWork":[]},"total":0,"page":0,"limit":0}

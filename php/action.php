@@ -7,6 +7,7 @@ if (!empty($_POST['phone'])) {
     $dataPost['phone'] = $_POST['phone'];
     $dataPost['fullName'] = isset($_POST['fullName']) ? filter_var($_POST['fullName'], FILTER_SANITIZE_STRING) : '';
     $dataPost['email'] = isset($_POST['email']) ? filter_var($_POST['email'], FILTER_SANITIZE_STRING) : '';
+    $dataPost['description'] = isset($_POST['description']) ? filter_var($_POST['description'], FILTER_SANITIZE_STRING) : '';
     $dataPost['advertisingSource'] = isset($_POST['advertisingSource']) ? filter_var($_POST['advertisingSource'], FILTER_SANITIZE_STRING) : '';
     $dataPost['provinceCode'] = isset($_POST['provinceCode']) ? filter_var($_POST['provinceCode'], FILTER_SANITIZE_STRING) : '';
     $dataPost['districtCode'] = isset($_POST['districtCode']) ? filter_var($_POST['districtCode'], FILTER_SANITIZE_STRING) : '';
@@ -25,6 +26,7 @@ if (!empty($_POST['phone'])) {
         $dataPost['tags'] = [];
     }
 
+//	file_put_contents('./logOrder.txt', print_r($dataPost, true) . PHP_EOL, FILE_APPEND);
     $result = createOpportunity($api, $dataPost);
     $result = json_decode($result, true);
 //    file_put_contents('./logOrder.txt', print_r($result, true) . PHP_EOL, FILE_APPEND);
