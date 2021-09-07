@@ -222,11 +222,11 @@ $(document).ready(function () {
         }
     });
 
-    $(document).on("click",".close-modal",function() {
+    $(document).on("click","#close-modal",function() {
         $('#modal-notif').modal('hide');
     });
 
-    $(document).on("click",".close-modal",function() {
+    $(document).on("click","#btn-continue",function() {
         $('#modal-success').modal('hide');
     });
 });
