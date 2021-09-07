@@ -17,33 +17,40 @@
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
+    <script>
+        const expiresCookie = 365;;
+        const prefixKey = 'NNXH123';
+        const price = 70000;
+    </script>
 </head>
 <body class="">
 <div class="wrapper-landing">
-<header>
+    <header>
     <div class="header sticky">
-        <div class="fixCen inner-header">
-            <h1 class="rs">
-                <a rel="noopener" href="https://nhatnhat.com/" class="logo"data-aos="fade-down" >
-                    <picture>
-                        <source media="(max-width:768px)" srcset="assets/images/logo-mb.png">
-                        <img alt="Nhất Nhất" width="299" height="56" src="assets/images/logo.png"/>
-                    </picture>
-                </a>
-            </h1>
-            <div class="box-right-header" data-aos="fade-left">
-                <div class="box-support">
-                    <span>Tổng đài tư vấn miễn phí</span>
-                    <a href="tel:0818122122" class="hotline">0818 122 122</a>
-                    <a href="#form-order" rel="noopener" class="btn-buy">Đặt Mua ngay</a>
-                </div>
-            </div>
-        </div>
+       <div class="fixCen inner-header">
+           <h1 class="rs">
+               <a rel="noopener" href="https://nhatnhat.com/" class="logo"data-aos="fade-down" >
+                   <picture>
+                       <source media="(max-width:768px)" srcset="assets/images/logo-mb.png">
+                       <img alt="Nhất Nhất" width="299" height="56" src="assets/images/logo.png"/>
+                   </picture>
+               </a>
+           </h1>
+
+           <div class="box-right-header" data-aos="fade-left">
+               <div class="box-support">
+                   <span>Tổng đài tư vấn miễn phí</span>
+                   <a href="tel:0818122122" class="hotline">0818 122 122</a>
+                   <a href="#" rel="noopener" class="btn-buy">Đặt Mua ngay</a>
+               </div>
+           </div>
+       </div>
     </div>
     <div class="banner-header">
         <picture>
             <source media="(max-width:1024px)" srcset="assets/images/banner-mb.jpg">
             <img alt="Nhất Nhất" src="assets/images/banner.jpg"/>
+            <!--                <img class="img-banner-mb hide-desktop" src="assets/images/banner-mb.jpg"/>-->
         </picture>
         <div class="main-banner">
             <div class="fixCen">
@@ -72,11 +79,9 @@
                 <div class="input-form">
                     <div class="form-group">
                         <input type="text" class="fullname" name="fullname" placeholder="Họ tên"/>
-                        <label class="error">*<span> Trường bắt buộc</span></label>
                     </div>
                     <div class="form-group">
                         <input type="text" class="telephone" name="telephone" placeholder="Số điện thoại"/>
-                        <label class="error">*<span> Trường bắt buộc</span></label>
                     </div>
                 </div>
                 <button id="btn-send-info-header" name="send-info" class="btn-send-info">Mua ngay</button>
@@ -86,7 +91,7 @@
         <div class="error error-bottom-mb">* Trường bắt buộc</div>
     </div>
 </header>
-
+    
 <main>
     <div class="box-color-1">
         <div class="fixCen text-center slogan1">
@@ -115,9 +120,9 @@
                 <li><span>Ho nhẹ thường chỉ <strong>ngứa họng, đằng hắng </strong>trong vòng 1 vài ngày.</span></li>
                 <li><span>Ho nặng có biểu hiện: <strong>ho dữ dội, </strong>liên tục, ho <strong>quặn bụng</strong> và kéo dài.</span></li>
                 <li>
-                <span>Ho <strong>do dị ứng, cảm lạnh, viêm họng, viêm amidan, viêm thanh quản</strong> thường hết sau <strong>1 tuần</strong>, người bị nặng
-                thì <strong>từ 3 - 8 tuần</strong>.
-                </span>
+                    <span>Ho <strong>do dị ứng, cảm lạnh, viêm họng, viêm amidan, viêm thanh quản</strong> thường hết sau <strong>1 tuần</strong>, người bị nặng
+                    thì <strong>từ 3 - 8 tuần</strong>.
+                    </span>
                 </li>
                 <li><span>Các trường hợp kéo dài trên <strong>8 tuần</strong> gọi là <strong>ho mạn tính</strong></span></li>
             </ul>
@@ -153,7 +158,7 @@
 
             </div>
             <p class="rs text-center text-slogan-3" data-aos="fade-right">
-                <span class="font-weight-bold"> Nhưng không phải cứ thuốc Đông y là điều trị hiệu quả được ho, viêm họng, viêm amidan, viêm thanh quản</span>
+               <span class="font-weight-bold"> Nhưng không phải cứ thuốc Đông y là điều trị hiệu quả được ho, viêm họng, viêm amidan, viêm thanh quản</span>
                 vì thị trường Đông y tràn lan các sản phẩm không có tác dụng hoặc tác dụng không rõ rệt.
             </p>
         </div>
@@ -180,12 +185,10 @@
                     <form class="ads-form" id="ads-form">
                         <div class="input-form">
                             <div class="form-group">
-                                <input type="text" class="fullname" name="fullname" placeholder="Họ tên"/>
-                                <label class="error">Trường bắt buộc</label>
+                                <input autocomplete="off" type="text" class="fullname" name="fullname" placeholder="Họ tên"/>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="telephone" name="telephone" placeholder="Số điện thoại"/>
-                                <label class="error">Trường bắt buộc</label>
+                                <input autocomplete="off" type="text" class="telephone" name="telephone" placeholder="Số điện thoại"/>
                             </div>
                         </div>
                         <button id="btn-send-info" name="send-info" class="btn-send-info">Mua ngay</button>
@@ -340,11 +343,9 @@
                 <form class="form-register" id="form-register">
                     <div class="form-group w-100">
                         <input type="text" class="fullname" name="fullname" placeholder="Họ tên:">
-                        <label class="error">Trường bắt buộc</label>
                     </div>
                     <div class="form-group w-100">
                         <input type="text" class="telephone" name="telephone" placeholder="Điện thoại:">
-                        <label class="error">Trường bắt buộc</label>
                     </div>
                     <textarea class="description" name="description" placeholder="Tình trạng hiện tại"></textarea>
                     <button class="btn-register">Đăng ký tư vấn</button>
@@ -467,17 +468,19 @@
             <div class="main-form">
                 <h4 class="rs">Đặt mua sản phẩm</h4>
                 <div class="form-group w-100">
-                    <input type="text" type="text" class="fullname" name="fullname" placeholder="Họ tên"/>
+                    <input type="text" placeholder="Họ tên"/>
                     <label class="error">Trường bắt buộc</label>
                 </div>
                 <div class="form-group w-100">
-                    <input type="text" type="text" class="telephone" name="telephone" placeholder="Số điện thoại"/>
+                    <input type="text" placeholder="Số điện thoại"/>
                     <label class="error">Trường bắt buộc</label>
                 </div>
                 <div class="form-group w-100">
-                    <input type="text" type="text" class="address" name="address" placeholder="Địa chỉ nhận hàng"/>
+                    <input type="text" placeholder="Địa chỉ nhận hàng"/>
                     <label class="error">Trường bắt buộc</label>
                 </div>
+
+
                 <div class="form-group mb-0 box-counter">
                     <label for="number-max">Số lượng (Hộp):</label>
                     <div class="counter-main">
@@ -500,7 +503,7 @@
     </div>
 </main>
 
-<footer>
+    <footer>
     <div class="container main-footer">
         <div class="row flex-column top-footer text-center">
             <p class="rs">(*) Sản phẩm không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh</p>
@@ -552,5 +555,10 @@
 <script src="./assets/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
 <script src="./assets/js/page_all.js"></script>
+<!-- Action request data -->
+<script src="./assets/js/jquery.cookie.min.js"></script>
+<script src="./assets/js/jquery.validate.min.js"></script>
+<script src="./assets/js/main.js"></script>
+<!-- Action request data -->
 </body>
 </html>

@@ -9,6 +9,7 @@
                     </picture>
                 </a>
             </h1>
+
             <div class="box-right-header" data-aos="fade-left">
                 <div class="box-support">
                     <span>Tổng đài tư vấn miễn phí</span>
@@ -22,6 +23,7 @@
         <picture>
             <source media="(max-width:1024px)" srcset="assets/images/banner-mb.jpg">
             <img alt="Nhất Nhất" src="assets/images/banner.jpg"/>
+            <!--                <img class="img-banner-mb hide-desktop" src="assets/images/banner-mb.jpg"/>-->
         </picture>
         <div class="main-banner">
             <div class="fixCen">
@@ -49,10 +51,10 @@
             <form class="ads-form" id="ads-form-header">
                 <div class="input-form">
                     <div class="form-group">
-                        <input type="text" class="fullname" name="fullname" placeholder="Họ tên"/>
+                        <input autocomplete="off" type="text" class="fullname" name="fullname" placeholder="Họ tên"/>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="telephone" name="telephone" placeholder="Số điện thoại"/>
+                        <input autocomplete="off" type="text" class="telephone" name="telephone" placeholder="Số điện thoại"/>
                     </div>
                 </div>
                 <button id="btn-send-info-header" name="send-info" class="btn-send-info">Mua ngay</button>

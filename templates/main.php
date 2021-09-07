@@ -91,10 +91,10 @@
                     <form class="ads-form" id="ads-form">
                         <div class="input-form">
                             <div class="form-group">
-                                <input type="text" class="fullname" name="fullname" placeholder="Họ tên"/>
+                                <input autocomplete="off" type="text" class="fullname" name="fullname" placeholder="Họ tên"/>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="telephone" name="telephone" placeholder="Số điện thoại"/>
+                                <input autocomplete="off" type="text" class="telephone" name="telephone" placeholder="Số điện thoại"/>
                             </div>
                         </div>
                         <button id="btn-send-info" name="send-info" class="btn-send-info">Mua ngay</button>
@@ -248,12 +248,12 @@
                 </div>
                 <form class="form-register" id="form-register">
                     <div class="form-group w-100">
-                        <input type="text" class="fullname" name="fullname" placeholder="Họ tên:">
+                        <input autocomplete="off" type="text" class="fullname" name="fullname" placeholder="Họ tên:">
                     </div>
                     <div class="form-group w-100">
-                        <input type="text" class="telephone" name="telephone" placeholder="Điện thoại:">
+                        <input autocomplete="off" type="text" class="telephone" name="telephone" placeholder="Điện thoại:">
                     </div>
-                    <textarea class="description" name="description" placeholder="Tình trạng hiện tại"></textarea>
+                    <textarea autocomplete="off" class="description" name="description" placeholder="Tình trạng hiện tại"></textarea>
                     <button class="btn-register">Đăng ký tư vấn</button>
                 </form>
             </div>
@@ -374,14 +374,16 @@
             <div class="main-form">
                 <h4 class="rs">Đặt mua sản phẩm</h4>
                 <div class="form-group w-100">
-                    <input type="text" type="text" class="fullname" name="fullname" placeholder="Họ tên"/>
+                    <input autocomplete="off" type="text" type="text" class="fullname" name="fullname" placeholder="Họ tên"/>
                 </div>
                 <div class="form-group w-100">
-                    <input type="text" type="text" class="telephone" name="telephone" placeholder="Số điện thoại"/>
+                    <input autocomplete="off" type="text" type="text" class="telephone" name="telephone" placeholder="Số điện thoại"/>
                 </div>
                 <div class="form-group w-100">
-                    <input type="text" type="text" class="address" name="address" placeholder="Địa chỉ nhận hàng"/>
+                    <input autocomplete="off" type="text" type="text" class="address" name="address" placeholder="Địa chỉ nhận hàng"/>
                 </div>
+
+
                 <div class="form-group mb-0 box-counter">
                     <label for="number-max">Số lượng (Hộp):</label>
                     <div class="counter-main">
@@ -400,5 +402,6 @@
             <span class="text4">*Miễn cước vận chuyển toàn quốc từ 01 hộp</span>
             <span class="text5">Bạn được hoàn hàng nếu bao bì còn nguyên vẹn</span>
         </form>
+
     </div>
 </main>

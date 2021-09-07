@@ -1,6 +1,12 @@
+var messagesName = 'Họ tên bắt buộc';
+var messagesPhone = 'Số điện thoại bắt buộc';
 $(document).ready(function () {
     setCookieUtm();
-    /* ------------------ form info header ------------------ */
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        messagesName = '*';
+        messagesPhone = '*';
+    }
+
     $("#ads-form-header").validate({
         ignore: ":hidden",
         rules: {
@@ -13,10 +19,10 @@ $(document).ready(function () {
         },
         messages: {
             fullname: {
-                required: "Họ tên bắt buộc",
+                required: messagesName,
             },
             telephone: {
-                required: "Số điện thoại bắt buộc",
+                required: messagesPhone,
             },
         },
         submitHandler: function (form) {
