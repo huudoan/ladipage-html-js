@@ -134,6 +134,9 @@ $(document).ready(function () {
             },
             telephone: {
                 required: true
+            },
+            address: {
+                required: true
             }
         },
         submitHandler: function (form) {

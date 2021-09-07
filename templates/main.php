@@ -36,9 +36,9 @@
     </div>
     <div class="box-color-1">
         <div class="fixCen box-info2">
-            <p class="rs text-center slogan1" data-aos="fade-down">
+            <h2 class="rs text-center slogan1" data-aos="fade-down">
                 <span class="text-main1 text-uppercase">Hướng điều trị ho</span> Hiệu quả hiện nay
-            </p>
+            </h2>
             <div class="detail-info2">
                 <div class="item-info2" data-aos="fade-right">
                     <h5 class="rs name-info">Thuốc Tây Y</h5>
@@ -90,8 +90,14 @@
                     </ul>
                     <form class="ads-form" id="ads-form">
                         <div class="input-form">
-                            <input type="text" class="fullname" name="fullname" placeholder="Họ tên"/>
-                            <input type="text" class="telephone" name="telephone" placeholder="Số điện thoại"/>
+                            <div class="form-group">
+                                <input type="text" class="fullname" name="fullname" placeholder="Họ tên"/>
+                                <label class="error">Trường bắt buộc</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="telephone" name="telephone" placeholder="Số điện thoại"/>
+                                <label class="error">Trường bắt buộc</label>
+                            </div>
                         </div>
                         <button id="btn-send-info" name="send-info" class="btn-send-info">Mua ngay</button>
                     </form>
@@ -176,13 +182,13 @@
             </div>
             <div class="item-4 img-company" data-aos="fade-left">
                 <img class="w-100" src="assets/images/img-banner2.jpg"/>
-                <button class="btn-banner-order">Mua hàng</button>
+                <a href="#form-order" class="btn-banner-order">Mua hàng</a>
             </div>
         </div>
     </div>
     <div class="box-color-1">
         <div class="fixCen box-product-2">
-            <p class="rs slogan5 text-uppercase" data-aos="zoom-in"><span>Những ai nên sử dụng xịt họng nhất nhất Plus</span></p>
+            <h2 class="rs slogan5 text-uppercase" data-aos="zoom-in"><span>Những ai nên sử dụng xịt họng nhất nhất Plus</span></h2>
             <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" >
@@ -243,8 +249,14 @@
                     <span class="img-clock"></span>
                 </div>
                 <form class="form-register" id="form-register">
-                    <input type="text" class="fullname" name="fullname" placeholder="Họ tên:">
-                    <input type="text" class="telephone" name="telephone" placeholder="Điện thoại:">
+                    <div class="form-group w-100">
+                        <input type="text" class="fullname" name="fullname" placeholder="Họ tên:">
+                        <label class="error">Trường bắt buộc</label>
+                    </div>
+                    <div class="form-group w-100">
+                        <input type="text" class="telephone" name="telephone" placeholder="Điện thoại:">
+                        <label class="error">Trường bắt buộc</label>
+                    </div>
                     <textarea class="description" name="description" placeholder="Tình trạng hiện tại"></textarea>
                     <button class="btn-register">Đăng ký tư vấn</button>
                 </form>
@@ -253,7 +265,7 @@
     </div>
     <div class="box-color-1">
         <div class="fixCen">
-            <p class="rs slogan5"><span>95% người dùng <br/> ĐẠT HIỆU QUẢ như mong đợi</span></p>
+            <h2 class="rs slogan5"><span>95% người dùng <br/> ĐẠT HIỆU QUẢ như mong đợi</span></h2>
         </div>
         <div class="fixCen box-color-1 box-comment box-comment-desktop">
             <div class="item-comment">
@@ -365,9 +377,18 @@
         <form class="form-order" id="form-order">
             <div class="main-form">
                 <h4 class="rs">Đặt mua sản phẩm</h4>
-                <input type="text" type="text" class="fullname" name="fullname" placeholder="Họ tên"/>
-                <input type="text" type="text" class="telephone" name="telephone" placeholder="Số điện thoại"/>
-                <input type="text" type="text" class="address" name="address" placeholder="Địa chỉ nhận hàng"/>
+                <div class="form-group w-100">
+                    <input type="text" type="text" class="fullname" name="fullname" placeholder="Họ tên"/>
+                    <label class="error">Trường bắt buộc</label>
+                </div>
+                <div class="form-group w-100">
+                    <input type="text" type="text" class="telephone" name="telephone" placeholder="Số điện thoại"/>
+                    <label class="error">Trường bắt buộc</label>
+                </div>
+                <div class="form-group w-100">
+                    <input type="text" type="text" class="address" name="address" placeholder="Địa chỉ nhận hàng"/>
+                    <label class="error">Trường bắt buộc</label>
+                </div>
                 <div class="form-group mb-0 box-counter">
                     <label for="number-max">Số lượng (Hộp):</label>
                     <div class="counter-main">

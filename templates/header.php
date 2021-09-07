@@ -1,12 +1,14 @@
 <header>
     <div class="header sticky">
         <div class="fixCen inner-header">
-            <a rel="noopener" href="https://nhatnhat.com/" class="logo"data-aos="fade-down" >
-                <picture>
-                    <source media="(max-width:768px)" srcset="assets/images/logo-mb.png">
-                    <img alt="Nhất Nhất" width="299" height="56" src="assets/images/logo.png"/>
-                </picture>
-            </a>
+            <h1 class="rs">
+                <a rel="noopener" href="https://nhatnhat.com/" class="logo"data-aos="fade-down" >
+                    <picture>
+                        <source media="(max-width:768px)" srcset="assets/images/logo-mb.png">
+                        <img alt="Nhất Nhất" width="299" height="56" src="assets/images/logo.png"/>
+                    </picture>
+                </a>
+            </h1>
             <div class="box-right-header" data-aos="fade-left">
                 <div class="box-support">
                     <span>Tổng đài tư vấn miễn phí</span>
@@ -46,12 +48,19 @@
             </div>
             <form class="ads-form" id="ads-form-header">
                 <div class="input-form">
-                    <input type="text" class="fullname" name="fullname" placeholder="Họ tên"/>
-                    <input type="text" class="telephone" name="telephone" placeholder="Số điện thoại"/>
+                    <div class="form-group">
+                        <input type="text" class="fullname" name="fullname" placeholder="Họ tên"/>
+                        <label class="error">*<span> Trường bắt buộc</span></label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="telephone" name="telephone" placeholder="Số điện thoại"/>
+                        <label class="error">*<span> Trường bắt buộc</span></label>
+                    </div>
                 </div>
                 <button id="btn-send-info-header" name="send-info" class="btn-send-info">Mua ngay</button>
             </form>
             <div href="#" class="img-product-ads"><img width="316" height="254" alt="Ảnh sản phẩm 1" src="assets/images/img-product1.png"/></div>
         </div>
+        <div class="error error-bottom-mb">* Trường bắt buộc</div>
     </div>
 </header>
