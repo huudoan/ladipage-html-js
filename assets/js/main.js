@@ -45,9 +45,9 @@ $(document).ready(function () {
                     if (response.success === true) {
                         $(form).find(".fullname").val('');
                         $(form).find(".telephone").val('');
-                        alert('Thành công');
+                        $('#modal-success').modal('show');
                     } else {
-                        alert('Thất bại');
+                        $('#modal-notif').modal('show');
                     }
                 }
             });
@@ -94,9 +94,9 @@ $(document).ready(function () {
                     if (response.success === true) {
                         $(form).find(".fullname").val('');
                         $(form).find(".telephone").val('');
-                        alert('Thành công');
+                        $('#modal-success').modal('show');
                     } else {
-                        alert('Thất bại');
+                        $('#modal-notif').modal('show');
                     }
                 }
             });
@@ -145,9 +145,9 @@ $(document).ready(function () {
                         $(form).find(".fullname").val('');
                         $(form).find(".telephone").val('');
                         $(form).find(".description").val('');
-                        alert('Thành công');
+                        $('#modal-success').modal('show');
                     } else {
-                        alert('Thất bại');
+                        $('#modal-notif').modal('show');
                     }
                 }
             });
@@ -204,9 +204,9 @@ $(document).ready(function () {
                         $(form).find(".telephone").val('');
                         $(form).find(".address").val('');
                         $(form).find(".quantity").val(1);
-                        alert('Thành công');
+                        $('#modal-success').modal('show');
                     } else {
-                        alert('Thất bại');
+                        $('#modal-notif').modal('show');
                     }
                 }
             });

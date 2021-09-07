@@ -48,6 +48,48 @@ include('php/function.php');
         <?php include('templates/header.php'); ?>
         <?php include('templates/main.php'); ?>
         <?php include('templates/footer.php'); ?>
+        <!--//$('#modal-success').modal();-->
+        <div class=" modal" tabindex="-1" role="dialog" id="modal-success">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-uppercase w-100 text-center ">Hoàn tất</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h4 class="rs title-1 font-weight-bold">Yêu cầu tư vấn của quý khách</h4>
+                        <p class="rs">đã được gửi đến Xịt họng Nhất Nhất Plus</p>
+                        <div class="content">
+                            Số điện thoại <span class="font-weight-bold">0818.122.122</span> sẽ liên hệ với quý khách trong thời gian sớm nhất.
+                        </div>
+                    </div>
+                    <div class="modal-footer border-top-0 flex-column align-items-center">
+                        <button type="button" class="btn btn-continue">Tiếp tục tìm hiểu sản phẩm</button>
+                        <!--                <button type="button" class="btn btn-back" data-dismiss="modal">Quay về trang</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modal thông báo lỗi-->
+        <!--$('#modal-notif').modal();-->
+        <div class=" modal modal-notif" tabindex="-1" role="dialog" id="modal-notif">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-uppercase w-100 text-center">Thông báo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p class="rs font-weight-bold">Gửi yêu cầu thất bại!</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 <script src="./assets/js/jquery-3.1.1.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>

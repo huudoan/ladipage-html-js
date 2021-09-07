@@ -1,8 +1,8 @@
 /*!
- * project_shg
+ * thuynt
  * 
  * 
- * @author Thuclfc
+ * @author thuynt
  * @version 2.0.0
  * Copyright 2021. MIT licensed.
  */$(document).ready(function () {
@@ -66,6 +66,7 @@ $(function () {
 
       if (currentVal != NaN && currentVal + 1 <= max) {
         _this.val(currentVal + 1);
+
         $('#total-order').val((currentVal + 1) * parseInt(price));
       }
     });
@@ -74,6 +75,7 @@ $(function () {
 
       if (currentVal != NaN && currentVal != 0) {
         _this.val(currentVal - 1);
+
         $('#total-order').val((currentVal - 1) * parseInt(price));
       }
     });
