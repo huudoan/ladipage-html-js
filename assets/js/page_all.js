@@ -6,6 +6,7 @@
  * @version 2.0.0
  * Copyright 2021. MIT licensed.
  */$(document).ready(function () {
+  $(".loading-start").hide();
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 

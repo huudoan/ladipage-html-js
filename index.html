@@ -13,10 +13,40 @@
     <meta property="og:url" content="https://nhatnhat.com/" />
     <meta property="og:site_name" content="https://nhatnhat.com/" />
     <link rel="icon" href="./assets/images/favicon.ico">
+    </body>
+    <!--css-->
     <title>Dược Phẩm Nhất Nhất</title>
-    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet">
-    <link href="./assets/css/style.css" rel="stylesheet">
+    <style>
+        .loading-start{
+            width: 100%;
+            height: 100%;
+            background-color: #000000f2;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .donut {
+            width: 5rem;
+            height: 5rem;
+            margin: 2rem;
+            border-radius: 50%;
+            border: 0.3rem solid rgba(108, 180, 56, 0.3);
+            border-top-color: #6CB438;
+            animation: 1.5s spin infinite linear;
+        }
+        .donut.multi {
+            border-bottom-color: #6CB438;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
     <script>
         const expiresCookie = 365;;
         const prefixKey = 'NNXH123';
@@ -25,14 +55,14 @@
 </head>
 <body class="">
 <div class="wrapper-landing">
-<header>
+    <header>
     <div class="header sticky">
         <div class="fixCen inner-header">
             <h1 class="rs">
                 <a rel="noopener" href="https://nhatnhat.com/" class="logo"data-aos="fade-down" >
                     <picture>
                         <source media="(max-width:768px)" srcset="assets/images/logo-mb.png">
-                        <img class="lazy" alt="Nhất Nhất" width="299" height="56" src="assets/images/logo.png"/>
+                        <img class="lazy" alt="Nhất Nhất" width="299" height="56" data-original="assets/images/logo.png"/>
                     </picture>
                 </a>
             </h1>
@@ -49,8 +79,8 @@
     <div class="banner-header">
         <picture>
             <source media="(max-width:1024px)" srcset="assets/images/banner-mb.jpg">
-            <img class="lazy" alt="Nhất Nhất" src="assets/images/banner.jpg"/>
-            <!--                <img class="lazy" class="img-banner-mb hide-desktop" src="assets/images/banner-mb.jpg"/>-->
+            <img class="lazy" alt="Nhất Nhất" data-original="assets/images/banner.jpg"/>
+            <!--                <img class="lazy" class="img-banner-mb hide-desktop" data-original="assets/images/banner-mb.jpg"/>-->
         </picture>
         <div class="main-banner">
             <div class="fixCen">
@@ -86,13 +116,12 @@
                 </div>
                 <button id="btn-send-info-header" name="send-info" class="btn-send-info">Mua ngay</button>
             </form>
-			<a href="#form-order" class="btn-send-info d-block d-sm-none">Mua ngay</a>
-            <div href="#" class="img-product-ads"><img class="lazy" width="316" height="254" alt="Ảnh sản phẩm 1" src="assets/images/img-product1.png"/></div>
+            <div href="#" class="img-product-ads"><img class="lazy" width="316" height="254" alt="Ảnh sản phẩm 1" data-original="assets/images/img-product1.png"/></div>
         </div>
         <div class="error error-bottom-mb">* Trường bắt buộc</div>
     </div>
 </header>
-
+    
 <main>
     <div class="box-color-1">
         <div class="fixCen text-center slogan1">
@@ -175,7 +204,7 @@
     <div class="box-bg-4">
         <div class="fixCen">
             <div class="box-product-1">
-                <span class="img-product" data-aos="fade-right"><img class="lazy" src="assets/images/img-product-2.png"></span>
+                <span class="img-product" data-aos="fade-right"><img class="lazy" data-original="assets/images/img-product-2.png"></span>
                 <div class="box-right-product" data-aos="fade-left">
                     <ul class="rs lst-note1">
                         <li><span>Thường <strong class="font-weight-bold">cắt ngay cơn ho trong 10 phút</strong></span></li>
@@ -194,6 +223,7 @@
                         </div>
                         <button id="btn-send-info" name="send-info" class="btn-send-info">Mua ngay</button>
                     </form>
+                    <a href="#form-order" class="btn-send-info d-block d-sm-none">Mua ngay</a>
                 </div>
             </div>
         </div>
@@ -254,11 +284,11 @@
         <div class="fixCen">
             <div class="lst-price">
                 <div class="item-price" data-aos="fade-right">
-                    <span class="img-price"><img class="lazy" src="assets/images/cd-ngu-y.png"/></span>
+                    <span class="img-price"><img class="lazy" data-original="assets/images/cd-ngu-y.png"/></span>
                     <span class="name-price">Cung đình<br> Ngự Y Mật Phương</span>
                 </div>
                 <div class="item-price" data-aos="fade-left">
-                    <span class="img-price"><img class="lazy" src="assets/images/DSC_8234.png"/></span>
+                    <span class="img-price"><img class="lazy" data-original="assets/images/DSC_8234.png"/></span>
                     <span class="name-price">Nhà máy Nhất Nhất đạt giải vàng thương hiệu quốc gia</span>
                 </div>
             </div>
@@ -267,14 +297,14 @@
     <div class="box-color-1">
         <div class=" box-info-company" >
             <div class="item-4 box-video" data-aos="fade-right">
-                <iframe width="100%" height="350"
-                        src="https://www.youtube.com/embed/Jcd_Yh0WSTc"
+                <iframe width="100%" height="350" loading="lazy"
+                        data-src="https://www.youtube.com/embed/Jcd_Yh0WSTc"
                         title="Hết đau đầu, chóng mặt, mất ngủ" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                        allowfullscreen=""></iframe>
             </div>
             <div class="item-4 img-company" data-aos="fade-left">
-                <img class="w-100 lazy" src="assets/images/img-banner2.jpg"/>
+                <img class="w-100 lazy" data-original="assets/images/img-banner2.jpg"/>
                 <a href="#form-order" class="btn-banner-order">Mua hàng</a>
             </div>
         </div>
@@ -285,7 +315,7 @@
             <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" >
-                        <img class="lazy" src="assets/images/img-1.jpg"/>
+                        <img class="lazy" data-original="assets/images/img-1.jpg"/>
                         <div class="content-product-2">
                             <ul class="rs lst-product-2">
                                 <li>Người bị ho do cảm lạnh, do kích ứng</li>
@@ -294,7 +324,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide" >
-                        <img class="lazy" src="assets/images/img-2.jpg"/>
+                        <img class="lazy" data-original="assets/images/img-2.jpg"/>
                         <div class="content-product-2">
                             <ul class="rs lst-product-2">
                                 <li>Người bị viêm họng: cổ họng sưng đau, rát họng, ho, khàn tiếng, khó nuốt</li>
@@ -304,7 +334,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide" >
-                        <img class="lazy" src="assets/images/img-3.jpg"/>
+                        <img class="lazy" data-original="assets/images/img-3.jpg"/>
                         <div class="content-product-2">
                             <ul class="rs lst-product-2">
                                 <li>Người bị viêm thanh quản: khàn tiếng, mất tiếng, hụt hơi, mệt khi nói</li>
@@ -333,7 +363,7 @@
     </div>
     <div class="box-bg-6">
         <div class="fixCen box-product">
-            <div class="item-product"><img class="lazy" src="assets/images/img-doctor.png"/></div>
+            <div class="item-product"><img class="lazy" data-original="assets/images/img-doctor.png"/></div>
             <div class="item-product box-register">
                 <div class="info">
                     <div class="text-1">Xịt họng <br/>Nhất Nhất Plus</div>
@@ -360,7 +390,7 @@
         </div>
         <div class="fixCen box-color-1 box-comment box-comment-desktop">
             <div class="item-comment">
-                <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" src="assets/images/img-avatar.png"/></span>
+                <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" data-original="assets/images/img-avatar.png"/></span>
                 <div class="detail-comment">
                     <div class="info-user font-weight-bold">Ho do cảm lạnh</div>
                     <div class="content-comment">
@@ -372,7 +402,7 @@
                 </div>
             </div>
             <div class="item-comment">
-                <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" src="assets/images/img-avatar.png"/></span>
+                <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" data-original="assets/images/img-avatar.png"/></span>
                 <div class="detail-comment">
                     <div class="info-user font-weight-bold">Ho do kích ứng</div>
                     <div class="content-comment">
@@ -384,7 +414,7 @@
                 </div>
             </div>
             <div class="item-comment">
-                <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" src="assets/images/img-avatar-1.png"/></span>
+                <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" data-original="assets/images/img-avatar-1.png"/></span>
                 <div class="detail-comment">
                     <div class="info-user font-weight-bold">Viêm thanh quản</div>
                     <div class="content-comment">
@@ -397,7 +427,7 @@
                 </div>
             </div>
             <div class="item-comment">
-                <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" src="assets/images/img-avatar.png"/></span>
+                <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" data-original="assets/images/img-avatar.png"/></span>
                 <div class="detail-comment">
                     <div class="info-user font-weight-bold">Viêm họng</div>
                     <div class="content-comment">
@@ -411,7 +441,7 @@
         <div class="swiper-container box-comment box-comment-mb">
             <div class="swiper-wrapper">
                 <div class="swiper-slide item-comment">
-                    <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" src="assets/images/img-avatar.png"/></span>
+                    <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" data-original="assets/images/img-avatar.png"/></span>
                     <div class="detail-comment">
                         <div class="info-user">Ho do cảm lạnh</div>
                         <div class="content-comment">
@@ -423,7 +453,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide item-comment">
-                    <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" src="assets/images/img-avatar.png"/></span>
+                    <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" data-original="assets/images/img-avatar.png"/></span>
                     <div class="detail-comment">
                         <div class="info-user">Ho do kích ứng</div>
                         <div class="content-comment">
@@ -435,7 +465,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide item-comment">
-                    <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Thầy Hưng" src="assets/images/img-avatar-1.png"/></span>
+                    <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Thầy Hưng" data-original="assets/images/img-avatar-1.png"/></span>
                     <div class="detail-comment">
                         <div class="info-user">Viêm thanh quản</div>
                         <div class="content-comment">
@@ -447,7 +477,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide item-comment">
-                    <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" src="assets/images/img-avatar.png"/></span>
+                    <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" data-original="assets/images/img-avatar.png"/></span>
                     <div class="detail-comment">
                         <div class="info-user">Viêm họng</div>
                         <div class="content-comment">
@@ -463,9 +493,9 @@
     </div>
     <div class="box-info-order">
         <div class="info-product">
-            <span class="d-block">
-                <img class="lazy" alt="Xịt Họng Nhất Nhất" src="assets/images/img-group122.jpg"/>
-            </span>
+        <span class="d-block">
+            <img class="lazy" alt="Xịt Họng Nhất Nhất" data-original="assets/images/img-group122.jpg"/>
+        </span>
         </div>
         <form class="form-order" id="form-order">
             <div class="main-form">
@@ -503,12 +533,12 @@
     </div>
 </main>
 
-<footer>
+    <footer>
     <div class="container main-footer">
         <div class="row flex-column top-footer text-center">
             <p class="rs">(*) Sản phẩm không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh</p>
             <p class="rs">(*) Hiệu quả cảm nhận tùy theo cơ địa từng người</p>
-            <a rel="noopener" target="_blank" href="#" class="logo-ft"><img class="lazy img-fluid" alt="Dược Phẩm Nhất Nhất" width="380" height="83" src="assets/images//logo-ft.png"/></a>
+            <a rel="noopener" target="_blank" href="#" class="logo-ft"><img class="lazy img-fluid" alt="Dược Phẩm Nhất Nhất" width="380" height="83" data-original="assets/images//logo-ft.png"/></a>
             <p class="rs text-uppercase name-ft font-weight-bold">CÔNG TY TNHH PHÂN PHỐI TRỰC TUYẾN NHẤT NHẤT</p>
             <p class="rs add-ft">Địa chỉ: số 24, ngõ 22 phố Trung Kính, phường Trung Hòa, quận Cầu Giấy, thành phố Hà Nội</p>
         </div>
@@ -530,10 +560,10 @@
                 <div class="item-footer row">
                     <h5 class="rs text-center font-weight-bold">Phương thức thanh toán</h5>
                     <div class="list-method-pay">
-                        <span class="visa"><img class="lazy" src="assets/images/icon-visa.png"/></span>
-                        <span class="mscard"><img class="lazy" src="assets/images/icon-mscard.png"/></span>
-                        <span class="payusd"><img class="lazy" src="assets/images/icon-usd.png"/></span>
-                        <span class="ib-bank"><img class="lazy" src="assets/images/icon-ibbank.png"/></span>
+                        <span class="visa"><img class="lazy" data-original="assets/images/icon-visa.png"/></span>
+                        <span class="mscard"><img class="lazy" data-original="assets/images/icon-mscard.png"/></span>
+                        <span class="payusd"><img class="lazy" data-original="assets/images/icon-usd.png"/></span>
+                        <span class="ib-bank"><img class="lazy" data-original="assets/images/icon-ibbank.png"/></span>
                     </div>
                 </div>
             </div>
@@ -596,17 +626,41 @@
 <div class="loading" style="display: none">
     <div class="donut"></div>
 </div>
+<div class="loading-start">
+    <div class="donut"></div>
+</div>
 <!--loading-->
 </div>
-<script src="./assets/js/jquery-3.1.1.min.js"></script>
-<script src="./assets/js/bootstrap.min.js"></script>
-<script src="./assets/js/jquery.lazyload.min.js"></script>
+
+
+<script src="assets/js/jquery-3.1.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.lazyload.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
-<script src="./assets/js/page_all.js"></script>
+<script src="assets/js/page_all.js"></script>
 <!-- Action request data -->
-<script src="./assets/js/jquery.cookie.min.js"></script>
-<script src="./assets/js/jquery.validate.min.js"></script>
-<script src="./assets/js/main.js"></script>
+<script src="assets/js/jquery.cookie.min.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+<script src="assets/js/main.js"></script>
 <!-- Action request data -->
+<script>
+    if ('loading' in HTMLIFrameElement.prototype) {
+        const iframes = document.querySelectorAll('iframe[loading="lazy"]');
+        iframes.forEach(iframe => {
+            iframe.src = iframe.dataset.src;
+        });
+    } else {
+        // Dynamically import the LazySizes library
+        const script = document.createElement('script');
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js';
+        document.body.appendChild(script);
+    }
+</script>
+<!-- Action request data -->
+<!--css-->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<!---->
 </body>
 </html>

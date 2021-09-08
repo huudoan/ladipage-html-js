@@ -1,8 +1,5 @@
 var messagesName = 'Họ tên bắt buộc';
 var messagesPhone = 'Số điện thoại bắt buộc';
-
-$("img.lazy").lazyload();
-
 $(document).ready(function () {
     setCookieUtm();
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){

@@ -5,7 +5,7 @@
                 <a rel="noopener" href="https://nhatnhat.com/" class="logo"data-aos="fade-down" >
                     <picture>
                         <source media="(max-width:768px)" srcset="assets/images/logo-mb.png">
-                        <img class="lazy" alt="Nhất Nhất" width="299" height="56" src="assets/images/logo.png"/>
+                        <img class="lazy" alt="Nhất Nhất" width="299" height="56" data-original="assets/images/logo.png"/>
                     </picture>
                 </a>
             </h1>
@@ -22,8 +22,8 @@
     <div class="banner-header">
         <picture>
             <source media="(max-width:1024px)" srcset="assets/images/banner-mb.jpg">
-            <img class="lazy" alt="Nhất Nhất" src="assets/images/banner.jpg"/>
-            <!--                <img class="lazy" class="img-banner-mb hide-desktop" src="assets/images/banner-mb.jpg"/>-->
+            <img class="lazy" alt="Nhất Nhất" data-original="assets/images/banner.jpg"/>
+            <!--                <img class="lazy" class="img-banner-mb hide-desktop" data-original="assets/images/banner-mb.jpg"/>-->
         </picture>
         <div class="main-banner">
             <div class="fixCen">
@@ -59,7 +59,7 @@
                 </div>
                 <button id="btn-send-info-header" name="send-info" class="btn-send-info">Mua ngay</button>
             </form>
-            <div href="#" class="img-product-ads"><img class="lazy" width="316" height="254" alt="Ảnh sản phẩm 1" src="assets/images/img-product1.png"/></div>
+            <div href="#" class="img-product-ads"><img class="lazy" width="316" height="254" alt="Ảnh sản phẩm 1" data-original="assets/images/img-product1.png"/></div>
         </div>
         <div class="error error-bottom-mb">* Trường bắt buộc</div>
     </div>

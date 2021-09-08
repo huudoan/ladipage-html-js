@@ -34,9 +34,37 @@ include('php/function.php');
     <!-- End SEO Twitter -->
 
     <link rel="icon" href="./assets/images/favicon.ico">
-    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet">
-    <link href="./assets/css/style.css" rel="stylesheet">
+	<style>
+        .loading-start{
+            width: 100%;
+            height: 100%;
+            background-color: #000000f2;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .donut {
+            width: 5rem;
+            height: 5rem;
+            margin: 2rem;
+            border-radius: 50%;
+            border: 0.3rem solid rgba(108, 180, 56, 0.3);
+            border-top-color: #6CB438;
+            animation: 1.5s spin infinite linear;
+        }
+        .donut.multi {
+            border-bottom-color: #6CB438;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
     <script>
         const expiresCookie = <?php echo $expiresCookie; ?>;
         const prefixKey = '<?php echo $prefixKey; ?>';
@@ -94,8 +122,16 @@ include('php/function.php');
         <div id="loading-request" class="loading" style="display: none">
             <div class="donut"></div>
         </div>
+		<div class="loading-start">
+			<div class="donut"></div>
+		</div>
         <!--loading-->
     </div>
+	
+<link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet">
+<link href="./assets/css/style.css" rel="stylesheet">
+	
 <script src="./assets/js/jquery-3.1.1.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
 <script src="./assets/js/jquery.lazyload.min.js"></script>
@@ -107,5 +143,19 @@ include('php/function.php');
 <script src="./assets/js/jquery.validate.min.js"></script>
 <script src="./assets/js/main.min.js"></script>
 <!-- Action request data -->
+<script>
+	$("img.lazy").lazyload();
+    if ('loading' in HTMLIFrameElement.prototype) {
+        const iframes = document.querySelectorAll('iframe[loading="lazy"]');
+        iframes.forEach(iframe => {
+            iframe.src = iframe.dataset.src;
+        });
+    } else {
+        // Dynamically import the LazySizes library
+        const script = document.createElement('script');
+        script.src = '/assets/js/lazysizes.min.js';
+        document.body.appendChild(script);
+    }
+</script>
 </body>
 </html>
