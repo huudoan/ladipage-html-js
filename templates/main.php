@@ -368,7 +368,9 @@
     </div>
     <div class="box-info-order">
         <div class="info-product">
-            <img class="lazy" alt="Xịt Họng Nhất Nhất" src="assets/images/img-group122.jpg"/>
+            <div class="d-block">
+                <img class="lazy" alt="Xịt Họng Nhất Nhất" src="assets/images/img-group122.jpg"/>
+            </div>
         </div>
         <form class="form-order" id="form-order">
             <div class="main-form">
