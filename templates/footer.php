@@ -3,7 +3,7 @@
         <div class="row flex-column top-footer text-center">
             <p class="rs">(*) Sản phẩm không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh</p>
             <p class="rs">(*) Hiệu quả cảm nhận tùy theo cơ địa từng người</p>
-            <a rel="noopener" target="_blank" href="#" class="logo-ft"><img alt="Dược Phẩm Nhất Nhất" class="img-fluid" width="380" height="83" src="assets/images//logo-ft.png"/></a>
+            <a rel="noopener" target="_blank" href="#" class="logo-ft"><img class="lazy" alt="Dược Phẩm Nhất Nhất" class="img-fluid" width="380" height="83" src="assets/images//logo-ft.png"/></a>
             <p class="rs text-uppercase name-ft font-weight-bold">CÔNG TY TNHH PHÂN PHỐI TRỰC TUYẾN NHẤT NHẤT</p>
             <p class="rs add-ft">Địa chỉ: số 24, ngõ 22 phố Trung Kính, phường Trung Hòa, quận Cầu Giấy, thành phố Hà Nội</p>
         </div>
@@ -25,10 +25,10 @@
                 <div class="item-footer row">
                     <h5 class="rs text-center font-weight-bold">Phương thức thanh toán</h5>
                     <div class="list-method-pay">
-                        <span class="visa"><img src="assets/images/icon-visa.png"/></span>
-                        <span class="mscard"><img src="assets/images/icon-mscard.png"/></span>
-                        <span class="payusd"><img src="assets/images/icon-usd.png"/></span>
-                        <span class="ib-bank"><img src="assets/images/icon-ibbank.png"/></span>
+                        <span class="visa"><img class="lazy" src="assets/images/icon-visa.png"/></span>
+                        <span class="mscard"><img class="lazy" src="assets/images/icon-mscard.png"/></span>
+                        <span class="payusd"><img class="lazy" src="assets/images/icon-usd.png"/></span>
+                        <span class="ib-bank"><img class="lazy" src="assets/images/icon-ibbank.png"/></span>
                     </div>
                 </div>
             </div>

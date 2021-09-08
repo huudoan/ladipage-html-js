@@ -98,8 +98,10 @@ include('php/function.php');
     </div>
 <script src="./assets/js/jquery-3.1.1.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/jquery.lazyload.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
 <script src="./assets/js/page_all.js"></script>
+
 <!-- Action request data -->
 <script src="./assets/js/jquery.cookie.min.js"></script>
 <script src="./assets/js/jquery.validate.min.js"></script>
