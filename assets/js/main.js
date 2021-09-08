@@ -203,8 +203,8 @@ $(document).ready(function () {
                 data: {
                     "fullName": $(form).find(".fullname").val(),
                     "phone": $(form).find(".telephone").val(),
-                    "phone": $(form).find(".address").val(),
-                    "phone": $(form).find(".quantity").val(),
+                    "address": $(form).find(".address").val(),
+                    "quantity": $(form).find(".quantity").val(),
                     "advertisingSource": utmCode,
                 },
                 success: function (response) {

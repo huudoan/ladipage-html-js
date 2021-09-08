@@ -179,7 +179,7 @@
                         allowfullscreen></iframe>
             </div>
             <div class="item-4 img-company" data-aos="fade-left">
-                <img class="lazy" class="w-100" src="assets/images/img-banner2.jpg"/>
+                <img class="w-100 lazy" src="assets/images/img-banner2.jpg"/>
                 <a href="#form-order" class="btn-banner-order">Mua hàng</a>
             </div>
         </div>
