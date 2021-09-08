@@ -99,6 +99,7 @@
                         </div>
                         <button id="btn-send-info" name="send-info" class="btn-send-info">Mua ngay</button>
                     </form>
+					<a href="#form-order" class="btn-send-info d-block d-sm-none">Mua ngay</a>
                 </div>
             </div>
         </div>

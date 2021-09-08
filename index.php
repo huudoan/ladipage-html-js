@@ -100,12 +100,12 @@ include('php/function.php');
 <script src="./assets/js/bootstrap.min.js"></script>
 <script src="./assets/js/jquery.lazyload.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
-<script src="./assets/js/page_all.js"></script>
+<script src="./assets/js/page_all.min.js"></script>
 
 <!-- Action request data -->
 <script src="./assets/js/jquery.cookie.min.js"></script>
 <script src="./assets/js/jquery.validate.min.js"></script>
-<script src="./assets/js/main.js"></script>
+<script src="./assets/js/main.min.js"></script>
 <!-- Action request data -->
 </body>
 </html>
