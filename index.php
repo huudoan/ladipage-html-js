@@ -33,7 +33,7 @@ include('php/function.php');
     <meta name="twitter:image" content="<?php echo $metaImage; ?>"/>
     <!-- End SEO Twitter -->
 
-    <link rel="icon" href="./assets/images/favicon.ico">
+    <link rel="icon" href="./assets/images/favicon.png">
 	<style>
         .loading-start{
             width: 100%;

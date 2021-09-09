@@ -23,7 +23,6 @@
         <picture>
             <source media="(max-width:1024px)" width="375" height="688" srcset="assets/images/banner-mb.jpg">
             <img alt="Xịt Họng Nhất Nhất" class="lazy" width="1920" height="1080" data-original="assets/images/banner.jpg"/>
-            <!--                <img alt="Xịt Họng Nhất Nhất" class="lazy" class="img-banner-mb hide-desktop" data-original="assets/images/banner-mb.jpg"/>-->
         </picture>
         <div class="main-banner">
             <div class="fixCen">

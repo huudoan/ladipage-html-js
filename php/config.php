@@ -11,6 +11,6 @@ $siteName = 'Dược phẩm Nhất Nhất';
 $metaDescription = 'Xịt họng Nhất Nhất Plus thường cắt cơ ho trong 10 phút. Giảm, hết nhanh ngứa họng, viêm họng, amidan, thanh quản. Sản xuất tại nhà máy Dược phẩm Nhất Nhất - giải vàng chất lượng quốc gia 2020.';
 $metaKeywords = 'xịt họng, cắt ho, đau rát họng, ngứa họng, viêm họng, viêm amidan, viêm thanh quản, xịt họng Nhất Nhất, xịt họng Nhất Nhất Plus';
 $metaTitle = 'Dung dịch Xịt họng Nhất Nhất Plus';
-$metaImage = '';
+$metaImage = '/assets/images/img-share.jpg';
 $price = 70000;
 ?>

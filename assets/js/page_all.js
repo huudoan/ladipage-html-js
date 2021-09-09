@@ -74,7 +74,7 @@ $(function () {
     block.find(".decrease").click(function () {
       var currentVal = parseInt(_this.val());
 
-      if (currentVal != NaN && currentVal != 0) {
+      if (currentVal != NaN && currentVal > 1) {
         _this.val(currentVal - 1);
 
         $('#total-order').val((currentVal - 1) * parseInt(price));
