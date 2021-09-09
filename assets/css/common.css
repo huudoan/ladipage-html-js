@@ -22,6 +22,10 @@
 
 /*set color main*/
 /*end set color main*/
+img {
+  height: auto;
+}
+
 a {
   text-decoration: none;
   -webkit-transition: all 0.5s ease;

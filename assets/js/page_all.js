@@ -23,7 +23,7 @@
     autoplay: {
       delay: 9000
     },
-    loop: true,
+    loop: false,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"

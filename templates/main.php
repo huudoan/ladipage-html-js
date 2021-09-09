@@ -80,7 +80,7 @@
     <div class="box-bg-4">
         <div class="fixCen">
             <div class="box-product-1">
-                <span class="img-product" data-aos="fade-right"><img class="lazy" data-original="assets/images/img-product-2.png"></span>
+				<span class="img-product" data-aos="fade-right"><img alt="Xịt Họng Nhất Nhất" class="lazy" width="547" height="690" data-original="assets/images/img-product-2.png"></span>
                 <div class="box-right-product" data-aos="fade-left">
                     <ul class="rs lst-note1">
                         <li><span>Thường <strong class="font-weight-bold">cắt ngay cơn ho trong 10 phút</strong></span></li>
@@ -160,11 +160,11 @@
         <div class="fixCen">
             <div class="lst-price">
                 <div class="item-price" data-aos="fade-right">
-                    <span class="img-price"><img class="lazy" data-original="assets/images/cd-ngu-y.png"/></span>
+					<span class="img-price"><img alt="Xịt Họng Nhất Nhất" class="lazy" width="414" height="518" data-original="assets/images/cd-ngu-y.png"/></span>
                     <span class="name-price">Cung đình<br> Ngự Y Mật Phương</span>
                 </div>
                 <div class="item-price" data-aos="fade-left">
-                    <span class="img-price"><img class="lazy" data-original="assets/images/DSC_8234.png"/></span>
+					<span class="img-price"><img alt="Xịt Họng Nhất Nhất" class="lazy" width="331" height="496" data-original="assets/images/DSC_8234.png"/></span>
                     <span class="name-price">Nhà máy Nhất Nhất đạt giải vàng thương hiệu quốc gia</span>
                 </div>
             </div>
@@ -180,7 +180,7 @@
                         allowfullscreen=""></iframe>
             </div>
             <div class="item-4 img-company" data-aos="fade-left">
-                <img class="w-100 lazy" data-original="assets/images/img-banner2.jpg"/>
+				<img alt="Xịt Họng Nhất Nhất" class="w-100 lazy" width="950" height="849" data-original="assets/images/img-banner2.jpg"/>
                 <a href="#form-order" class="btn-banner-order">Mua hàng</a>
             </div>
         </div>
@@ -191,7 +191,7 @@
             <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" >
-                        <img src="assets/images/img-1.jpg"/>
+						<img alt="Xịt Họng Nhất Nhất" class="" width="447" height="556" src="assets/images/img-1.jpg"/>
                         <div class="content-product-2">
                             <ul class="rs lst-product-2">
                                 <li>Người bị ho do cảm lạnh, do kích ứng</li>
@@ -200,7 +200,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide" >
-                        <img src="assets/images/img-2.jpg"/>
+						<img alt="Xịt Họng Nhất Nhất" class="" width="447" height="556" src="assets/images/img-2.jpg"/>
                         <div class="content-product-2">
                             <ul class="rs lst-product-2">
                                 <li>Người bị viêm họng: cổ họng sưng đau, rát họng, ho, khàn tiếng, khó nuốt</li>
@@ -210,7 +210,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide" >
-                        <img src="assets/images/img-3.jpg"/>
+						<img alt="Xịt Họng Nhất Nhất" class="" width="447" height="556" src="assets/images/img-3.jpg"/>
                         <div class="content-product-2">
                             <ul class="rs lst-product-2">
                                 <li>Người bị viêm thanh quản: khàn tiếng, mất tiếng, hụt hơi, mệt khi nói</li>
@@ -239,7 +239,7 @@
     </div>
     <div class="box-bg-6">
         <div class="fixCen box-product">
-            <div class="item-product"><img class="lazy" data-original="assets/images/img-doctor.png"/></div>
+			<div class="item-product"><img alt="Xịt Họng Nhất Nhất" class="lazy" width="736" height="846" data-original="assets/images/img-doctor.png"/></div>
             <div class="item-product box-register">
                 <div class="info">
                     <div class="text-1">Xịt họng <br/>Nhất Nhất Plus</div>
@@ -266,7 +266,7 @@
         </div>
         <div class="fixCen box-color-1 box-comment box-comment-desktop">
             <div class="item-comment">
-                <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" data-original="assets/images/img-avatar.png"/></span>
+				<span class="avatar-user"><img alt="Xịt Họng Nhất Nhất" class="img-fluid lazy" width="122" height="122" data-original="assets/images/img-avatar.png"/></span>
                 <div class="detail-comment">
                     <div class="info-user font-weight-bold">Ho do cảm lạnh</div>
                     <div class="content-comment">
@@ -278,7 +278,7 @@
                 </div>
             </div>
             <div class="item-comment">
-                <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" data-original="assets/images/img-avatar.png"/></span>
+				<span class="avatar-user"><img alt="Xịt Họng Nhất Nhất" class="img-fluid lazy" width="122" height="122" data-original="assets/images/img-avatar.png"/></span>
                 <div class="detail-comment">
                     <div class="info-user font-weight-bold">Ho do kích ứng</div>
                     <div class="content-comment">
@@ -290,7 +290,7 @@
                 </div>
             </div>
             <div class="item-comment">
-                <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" data-original="assets/images/img-avatar-1.png"/></span>
+				<span class="avatar-user"><img alt="Xịt Họng Nhất Nhất" class="img-fluid lazy" width="122" height="122" data-original="assets/images/img-avatar-1.png"/></span>
                 <div class="detail-comment">
                     <div class="info-user font-weight-bold">Viêm thanh quản</div>
                     <div class="content-comment">
@@ -303,7 +303,7 @@
                 </div>
             </div>
             <div class="item-comment">
-                <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" data-original="assets/images/img-avatar.png"/></span>
+				<span class="avatar-user"><img alt="Xịt Họng Nhất Nhất" class="img-fluid lazy" width="122" height="122" data-original="assets/images/img-avatar.png"/></span>
                 <div class="detail-comment">
                     <div class="info-user font-weight-bold">Viêm họng</div>
                     <div class="content-comment">
@@ -317,7 +317,7 @@
         <div class="swiper-container box-comment box-comment-mb">
             <div class="swiper-wrapper">
                 <div class="swiper-slide item-comment">
-                    <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" data-original="assets/images/img-avatar.png"/></span>
+                    <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Xịt Họng Nhất Nhất" data-original="assets/images/img-avatar.png"/></span>
                     <div class="detail-comment">
                         <div class="info-user">Ho do cảm lạnh</div>
                         <div class="content-comment">
@@ -329,7 +329,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide item-comment">
-                    <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" data-original="assets/images/img-avatar.png"/></span>
+                    <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Xịt Họng Nhất Nhất" data-original="assets/images/img-avatar.png"/></span>
                     <div class="detail-comment">
                         <div class="info-user">Ho do kích ứng</div>
                         <div class="content-comment">
@@ -341,7 +341,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide item-comment">
-                    <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Thầy Hưng" data-original="assets/images/img-avatar-1.png"/></span>
+                    <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Xịt Họng Nhất Nhất" data-original="assets/images/img-avatar-1.png"/></span>
                     <div class="detail-comment">
                         <div class="info-user">Viêm thanh quản</div>
                         <div class="content-comment">
@@ -353,7 +353,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide item-comment">
-                    <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Nguyễn Thy" data-original="assets/images/img-avatar.png"/></span>
+                    <span class="avatar-user"><img class="img-fluid lazy" width="122" height="122" alt="Xịt Họng Nhất Nhất" data-original="assets/images/img-avatar.png"/></span>
                     <div class="detail-comment">
                         <div class="info-user">Viêm họng</div>
                         <div class="content-comment">
@@ -370,7 +370,7 @@
     <div class="box-info-order">
         <div class="info-product">
             <span class="d-block">
-                <img class="lazy" alt="Xịt Họng Nhất Nhất" data-original="assets/images/img-group122.jpg"/>
+                <img class="lazy" alt="Xịt Họng Nhất Nhất" width="950" height="849" data-original="assets/images/img-group122.jpg"/>
             </span>
         </div>
         <form class="form-order" id="form-order">
